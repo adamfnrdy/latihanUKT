@@ -1,3672 +1,1036 @@
-
 <!DOCTYPE html>
 <html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>100 Soal Kepegawaian DJP</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>100 Soal Kepegawaian DJP - Per Nomor</title>
     <style>
-        body { font-family: Arial, sans-serif; line-height: 1.6; background-color: #f4f4f4; padding: 20px; }
-        .container { max-width: 800px; margin: auto; background: white; padding: 30px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
-        h1, h2 { color: #003366; text-align: center; }
-        .question { margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 15px; }
-        .question-text { font-weight: bold; margin-bottom: 10px; }
-        .options { list-style: none; padding: 0; }
-        .options li { margin: 5px 0; }
-        .btn { display: block; width: 100%; padding: 10px; background: #003366; color: white; border: none; border-radius: 5px; cursor: pointer; font-size: 16px; margin-top: 20px; }
-        .btn:hover { background: #0055a4; }
-        .result { margin-top: 20px; font-weight: bold; text-align: center; font-size: 20px; display: none; }
-        .correct { color: green; font-weight: bold; }
-        .wrong { color: red; font-weight: bold; }
-        .explanation { font-size: 0.9em; color: #666; display: none; margin-top: 5px; }
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        background-color: #f4f4f4;
+        padding: 20px;
+      }
+      .container {
+        max-width: 800px;
+        margin: auto;
+        background: white;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      h1 {
+        color: #003366;
+        text-align: center;
+      }
+      .question {
+        margin-bottom: 25px;
+        border: 1px solid #eee;
+        padding: 20px;
+        border-radius: 8px;
+        transition: 0.3s;
+      }
+      .question-text {
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+      .options {
+        list-style: none;
+        padding: 0;
+      }
+      .options li {
+        margin: 8px 0;
+      }
+      .btn-check {
+        padding: 5px 15px;
+        background: #003366;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-top: 10px;
+      }
+      .btn-check:hover {
+        background: #0055a4;
+      }
+      .correct-box {
+        background-color: #e8f5e9;
+        border: 1px solid green !important;
+      }
+      .wrong-box {
+        background-color: #ffebee;
+        border: 1px solid red !important;
+      }
+      .explanation {
+        font-size: 0.9em;
+        color: #333;
+        display: none;
+        margin-top: 10px;
+        padding: 10px;
+        border-top: 1px dashed #ccc;
+        font-weight: bold;
+      }
+      label {
+        cursor: pointer;
+        display: block;
+        width: 100%;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <h1>Ujian Mandiri: 100 Soal Kepegawaian</h1>
-        <p style="text-align:center">Berdasarkan Modul Kepegawaian DJP 2025</p>
-        <hr>
-        <form id="quizForm">
+      <h1>Ujian Mandiri: Soal Kepegawaian</h1>
+      <p style="text-align: center">
+        Cek jawaban langsung setelah menjawab setiap soal.
+      </p>
+      <hr />
 
-            <div class="question" id="q0">
-                <p class="question-text">1. Berdasarkan UU No. 20 Tahun 2023, ASN terdiri dari...</p>
-                <ul class="options">
-    
-                    <li>
-                        <label>
-                            <input type="radio" name="q0" value="0">
-                            a. PNS dan CPNS
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q0" value="1">
-                            b. PNS dan PPPK
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q0" value="2">
-                            c. PNS dan Pegawai Honorer
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q0" value="3">
-                            d. PNS dan Pegawai Kontrak
-                        </label>
-                    </li>
-        
-                </ul>
-                <div class="explanation" id="exp0">Jawaban benar: b</div>
-            </div>
-    
-            <div class="question" id="q1">
-                <p class="question-text">2. Batas usia pensiun bagi pejabat administrator dan pengawas adalah...</p>
-                <ul class="options">
-    
-                    <li>
-                        <label>
-                            <input type="radio" name="q1" value="0">
-                            a. 56 tahun
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q1" value="1">
-                            b. 58 tahun
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q1" value="2">
-                            c. 60 tahun
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q1" value="3">
-                            d. 65 tahun
-                        </label>
-                    </li>
-        
-                </ul>
-                <div class="explanation" id="exp1">Jawaban benar: b</div>
-            </div>
-    
-            <div class="question" id="q2">
-                <p class="question-text">3. Fungsi ASN menurut UU terbaru meliputi hal berikut, KECUALI...</p>
-                <ul class="options">
-    
-                    <li>
-                        <label>
-                            <input type="radio" name="q2" value="0">
-                            a. Pelaksana kebijakan publik
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q2" value="1">
-                            b. Pelayan publik
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q2" value="2">
-                            c. Pengawas keuangan negara
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q2" value="3">
-                            d. Perekat dan pemersatu bangsa
-                        </label>
-                    </li>
-        
-                </ul>
-                <div class="explanation" id="exp2">Jawaban benar: c</div>
-            </div>
-    
-            <div class="question" id="q3">
-                <p class="question-text">4. Nilai Dasar ASN 'BerAKHLAK' merupakan akronim, dimana huruf 'K' yang terakhir adalah...</p>
-                <ul class="options">
-    
-                    <li>
-                        <label>
-                            <input type="radio" name="q3" value="0">
-                            a. Kompeten
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q3" value="1">
-                            b. Kolaboratif
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q3" value="2">
-                            c. Kompak
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q3" value="3">
-                            d. Kreatif
-                        </label>
-                    </li>
-        
-                </ul>
-                <div class="explanation" id="exp3">Jawaban benar: b</div>
-            </div>
-    
-            <div class="question" id="q4">
-                <p class="question-text">5. Manakah yang termasuk Jabatan Manajerial?</p>
-                <ul class="options">
-    
-                    <li>
-                        <label>
-                            <input type="radio" name="q4" value="0">
-                            a. Jabatan Fungsional
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q4" value="1">
-                            b. Jabatan Pelaksana
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q4" value="2">
-                            c. Jabatan Administrator
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q4" value="3">
-                            d. Jabatan Tenaga Ahli
-                        </label>
-                    </li>
-        
-                </ul>
-                <div class="explanation" id="exp4">Jawaban benar: c</div>
-            </div>
-    
-            <div class="question" id="q5">
-                <p class="question-text">6. Pemberhentian ASN tidak atas permintaan sendiri dilakukan karena hal berikut, KECUALI...</p>
-                <ul class="options">
-    
-                    <li>
-                        <label>
-                            <input type="radio" name="q5" value="0">
-                            a. Mencapai batas usia pensiun
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q5" value="1">
-                            b. Perampingan organisasi
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q5" value="2">
-                            c. Tidak berkinerja
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q5" value="3">
-                            d. Mengundurkan diri
-                        </label>
-                    </li>
-        
-                </ul>
-                <div class="explanation" id="exp5">Jawaban benar: d</div>
-            </div>
-    
-            <div class="question" id="q6">
-                <p class="question-text">7. Periodisasi kenaikan pangkat PNS sejak 1 Oktober 2025 dapat dilakukan pada...</p>
-                <ul class="options">
-    
-                    <li>
-                        <label>
-                            <input type="radio" name="q6" value="0">
-                            a. 1 April dan 1 Oktober
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q6" value="1">
-                            b. Setiap awal triwulan
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q6" value="2">
-                            c. Tanggal 1 setiap bulan
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q6" value="3">
-                            d. Setiap awal semester
-                        </label>
-                    </li>
-        
-                </ul>
-                <div class="explanation" id="exp6">Jawaban benar: c</div>
-            </div>
-    
-            <div class="question" id="q7">
-                <p class="question-text">8. Golongan ruang bagi PNS dengan pangkat Penata Muda (lulusan S1/D4) adalah...</p>
-                <ul class="options">
-    
-                    <li>
-                        <label>
-                            <input type="radio" name="q7" value="0">
-                            a. II/c
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q7" value="1">
-                            b. III/a
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q7" value="2">
-                            c. III/b
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q7" value="3">
-                            d. III/c
-                        </label>
-                    </li>
-        
-                </ul>
-                <div class="explanation" id="exp7">Jawaban benar: b</div>
-            </div>
-    
-            <div class="question" id="q8">
-                <p class="question-text">9. Pangkat untuk golongan ruang III/c adalah...</p>
-                <ul class="options">
-    
-                    <li>
-                        <label>
-                            <input type="radio" name="q8" value="0">
-                            a. Penata Muda Tk I
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q8" value="1">
-                            b. Penata
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q8" value="2">
-                            c. Penata Tk I
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q8" value="3">
-                            d. Pembina
-                        </label>
-                    </li>
-        
-                </ul>
-                <div class="explanation" id="exp8">Jawaban benar: b</div>
-            </div>
-    
-            <div class="question" id="q9">
-                <p class="question-text">10. Manajemen ASN diselenggarakan berdasarkan sistem...</p>
-                <ul class="options">
-    
-                    <li>
-                        <label>
-                            <input type="radio" name="q9" value="0">
-                            a. Senioritas
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q9" value="1">
-                            b. Sistem Merit
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q9" value="2">
-                            c. Sistem Spoil
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q9" value="3">
-                            d. Sistem Terbuka
-                        </label>
-                    </li>
-        
-                </ul>
-                <div class="explanation" id="exp9">Jawaban benar: b</div>
-            </div>
-    
-            <div class="question" id="q10">
-                <p class="question-text">11. (KASUS) Riko, seorang Pejabat Pengawas lahir pada 21 Mei 1988. Kapan ia akan pensiun?</p>
-                <ul class="options">
-    
-                    <li>
-                        <label>
-                            <input type="radio" name="q10" value="0">
-                            a. 21 Mei 2046
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q10" value="1">
-                            b. 1 Juni 2046
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q10" value="2">
-                            c. 1 Mei 2046
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q10" value="3">
-                            d. 21 Mei 2048
-                        </label>
-                    </li>
-        
-                </ul>
-                <div class="explanation" id="exp10">Jawaban benar: b</div>
-            </div>
-    
-            <div class="question" id="q11">
-                <p class="question-text">12. Berikut adalah hak ASN dalam bentuk Jaminan Sosial, KECUALI...</p>
-                <ul class="options">
-    
-                    <li>
-                        <label>
-                            <input type="radio" name="q11" value="0">
-                            a. Jaminan Hari Tua
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q11" value="1">
-                            b. Jaminan Kematian
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q11" value="2">
-                            c. Jaminan Perumahan Mewah
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q11" value="3">
-                            d. Jaminan Kecelakaan Kerja
-                        </label>
-                    </li>
-        
-                </ul>
-                <div class="explanation" id="exp11">Jawaban benar: c</div>
-            </div>
-    
-            <div class="question" id="q12">
-                <p class="question-text">13. Pemberhentian sementara bagi PNS dilakukan jika...</p>
-                <ul class="options">
-    
-                    <li>
-                        <label>
-                            <input type="radio" name="q12" value="0">
-                            a. Sakit selama 3 hari
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q12" value="1">
-                            b. Diangkat menjadi pejabat negara
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q12" value="2">
-                            c. Mengambil cuti tahunan
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q12" value="3">
-                            d. Mendapat hukuman disiplin ringan
-                        </label>
-                    </li>
-        
-                </ul>
-                <div class="explanation" id="exp12">Jawaban benar: b</div>
-            </div>
-    
-            <div class="question" id="q13">
-                <p class="question-text">14. Asas netralitas dalam penyelenggaraan kebijakan ASN berarti...</p>
-                <ul class="options">
-    
-                    <li>
-                        <label>
-                            <input type="radio" name="q13" value="0">
-                            a. Bebas dari pengaruh partai politik
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q13" value="1">
-                            b. Tidak bekerja sama dengan instansi lain
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q13" value="2">
-                            c. Hanya melayani golongan tertentu
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q13" value="3">
-                            d. Bebas dari aturan hukum
-                        </label>
-                    </li>
-        
-                </ul>
-                <div class="explanation" id="exp13">Jawaban benar: a</div>
-            </div>
-    
-            <div class="question" id="q14">
-                <p class="question-text">15. TMT Pensiun adalah tanggal 1 bulan berikutnya setelah pegawai mencapai...</p>
-                <ul class="options">
-    
-                    <li>
-                        <label>
-                            <input type="radio" name="q14" value="0">
-                            a. Masa kerja 20 tahun
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q14" value="1">
-                            b. Usia 50 tahun
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q14" value="2">
-                            c. Batas usia pensiun
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q14" value="3">
-                            d. Pangkat IV/e
-                        </label>
-                    </li>
-        
-                </ul>
-                <div class="explanation" id="exp14">Jawaban benar: c</div>
-            </div>
-    
-            <div class="question" id="q15">
-                <p class="question-text">16. Standar Kompetensi ASN terdiri atas kompetensi...</p>
-                <ul class="options">
-    
-                    <li>
-                        <label>
-                            <input type="radio" name="q15" value="0">
-                            a. Teknis, Manajerial, Sosial Kultural
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q15" value="1">
-                            b. Akademis, Teknis, Perilaku
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q15" value="2">
-                            c. Manajerial, Kepemimpinan, Strategis
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q15" value="3">
-                            d. Integritas, Profesional, Sinergi
-                        </label>
-                    </li>
-        
-                </ul>
-                <div class="explanation" id="exp15">Jawaban benar: a</div>
-            </div>
-    
-            <div class="question" id="q16">
-                <p class="question-text">17. Kompetensi yang diukur dari tingkat pendidikan, pelatihan fungsional, dan pengalaman kerja teknis adalah...</p>
-                <ul class="options">
-    
-                    <li>
-                        <label>
-                            <input type="radio" name="q16" value="0">
-                            a. Kompetensi Manajerial
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q16" value="1">
-                            b. Kompetensi Teknis
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q16" value="2">
-                            c. Kompetensi Sosial Kultural
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q16" value="3">
-                            d. Kompetensi Adaptif
-                        </label>
-                    </li>
-        
-                </ul>
-                <div class="explanation" id="exp16">Jawaban benar: b</div>
-            </div>
-    
-            <div class="question" id="q17">
-                <p class="question-text">18. Kemampuan dalam mempromosikan sikap toleransi dan keterbukaan termasuk dalam kompetensi...</p>
-                <ul class="options">
-    
-                    <li>
-                        <label>
-                            <input type="radio" name="q17" value="0">
-                            a. Manajerial
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q17" value="1">
-                            b. Teknis
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q17" value="2">
-                            c. Sosial Kultural
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q17" value="3">
-                            d. Integritas
-                        </label>
-                    </li>
-        
-                </ul>
-                <div class="explanation" id="exp17">Jawaban benar: c</div>
-            </div>
-    
-            <div class="question" id="q18">
-                <p class="question-text">19. Pelaksanaan pengembangan kompetensi secara nonklasikal meliputi hal berikut, KECUALI...</p>
-                <ul class="options">
-    
-                    <li>
-                        <label>
-                            <input type="radio" name="q18" value="0">
-                            a. Mentoring
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q18" value="1">
-                            b. E-learning
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q18" value="2">
-                            c. Seminar di kelas formal
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q18" value="3">
-                            d. Coaching
-                        </label>
-                    </li>
-        
-                </ul>
-                <div class="explanation" id="exp18">Jawaban benar: c</div>
-            </div>
-    
-            <div class="question" id="q19">
-                <p class="question-text">20. Analisis Kebutuhan Pembelajaran (AKP) dilakukan untuk...</p>
-                <ul class="options">
-    
-                    <li>
-                        <label>
-                            <input type="radio" name="q19" value="0">
-                            a. Menentukan besaran gaji
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q19" value="1">
-                            b. Mengidentifikasi gap kompetensi
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q19" value="2">
-                            c. Menilai kehadiran pegawai
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q19" value="3">
-                            d. Menentukan lokasi mutasi
-                        </label>
-                    </li>
-        
-                </ul>
-                <div class="explanation" id="exp19">Jawaban benar: b</div>
-            </div>
-    
-            <div class="question" id="q20">
-                <p class="question-text">21. Setiap pegawai ASN wajib melakukan pengembangan kompetensi minimal...</p>
-                <ul class="options">
-    
-                    <li>
-                        <label>
-                            <input type="radio" name="q20" value="0">
-                            a. 10 JP/tahun
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q20" value="1">
-                            b. 20 JP/tahun
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q20" value="2">
-                            c. 40 JP/tahun
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q20" value="3">
-                            d. Tidak ada batas minimal
-                        </label>
-                    </li>
-        
-                </ul>
-                <div class="explanation" id="exp20">Jawaban benar: b</div>
-            </div>
-    
-            <div class="question" id="q21">
-                <p class="question-text">22. Dalam kamus kompetensi manajerial, aspek 'Mengelola Perubahan' berada pada level...</p>
-                <ul class="options">
-    
-                    <li>
-                        <label>
-                            <input type="radio" name="q21" value="0">
-                            a. Soft skill
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q21" value="1">
-                            b. Hard skill
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q21" value="2">
-                            c. Managerial skill
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q21" value="3">
-                            d. Core skill
-                        </label>
-                    </li>
-        
-                </ul>
-                <div class="explanation" id="exp21">Jawaban benar: c</div>
-            </div>
-    
-            <div class="question" id="q22">
-                <p class="question-text">23. Siapa yang bertanggung jawab melakukan evaluasi pasca-pembelajaran?</p>
-                <ul class="options">
-    
-                    <li>
-                        <label>
-                            <input type="radio" name="q22" value="0">
-                            a. Atasan Langsung
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q22" value="1">
-                            b. Unit Kepegawaian Pusat
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q22" value="2">
-                            c. Lembaga Administrasi Negara
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q22" value="3">
-                            d. Pusdiklat Pajak
-                        </label>
-                    </li>
-        
-                </ul>
-                <div class="explanation" id="exp22">Jawaban benar: a</div>
-            </div>
-    
-            <div class="question" id="q23">
-                <p class="question-text">24. (KASUS) Seorang pelaksana ingin meningkatkan kemampuan bahasa asing untuk tugas luar negeri. Ini termasuk pengembangan kompetensi...</p>
-                <ul class="options">
-    
-                    <li>
-                        <label>
-                            <input type="radio" name="q23" value="0">
-                            a. Sosial Kultural
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q23" value="1">
-                            b. Manajerial
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q23" value="2">
-                            c. Teknis
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q23" value="3">
-                            d. Integritas
-                        </label>
-                    </li>
-        
-                </ul>
-                <div class="explanation" id="exp23">Jawaban benar: c</div>
-            </div>
-    
-            <div class="question" id="q24">
-                <p class="question-text">25. Pengembangan kompetensi melalui sistem pembelajaran yang terintegrasi (Corporate University) bertujuan...</p>
-                <ul class="options">
-    
-                    <li>
-                        <label>
-                            <input type="radio" name="q24" value="0">
-                            a. Mengurangi biaya diklat
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q24" value="1">
-                            b. Menyambungkan pembelajaran dengan pekerjaan
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q24" value="2">
-                            c. Hanya formalitas administrasi
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q24" value="3">
-                            d. Mengganti peran atasan
-                        </label>
-                    </li>
-        
-                </ul>
-                <div class="explanation" id="exp24">Jawaban benar: b</div>
-            </div>
-    
-            <div class="question" id="q25">
-                <p class="question-text">26. PNS Tugas Belajar Dibiayai yang Diberhentikan dari jabatan berhak menerima tunjangan kinerja sebesar...</p>
-                <ul class="options">
-    
-                    <li>
-                        <label>
-                            <input type="radio" name="q25" value="0">
-                            a. 100%
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q25" value="1">
-                            b. 75%
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q25" value="2">
-                            c. 50%
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q25" value="3">
-                            d. 25%
-                        </label>
-                    </li>
-        
-                </ul>
-                <div class="explanation" id="exp25">Jawaban benar: b</div>
-            </div>
-    
-            <div class="question" id="q26">
-                <p class="question-text">27. Berapa lama masa studi normatif maksimal untuk jenjang S2 dalam skema TB Mandiri?</p>
-                <ul class="options">
-    
-                    <li>
-                        <label>
-                            <input type="radio" name="q26" value="0">
-                            a. 1,5 tahun
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q26" value="1">
-                            b. 2 tahun
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q26" value="2">
-                            c. 3 tahun
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q26" value="3">
-                            d. 4 tahun
-                        </label>
-                    </li>
-        
-                </ul>
-                <div class="explanation" id="exp26">Jawaban benar: c</div>
-            </div>
-    
-            <div class="question" id="q27">
-                <p class="question-text">28. Jangka waktu re-entry program bagi PNS yang telah selesai studi adalah...</p>
-                <ul class="options">
-    
-                    <li>
-                        <label>
-                            <input type="radio" name="q27" value="0">
-                            a. 1 hari kerja
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q27" value="1">
-                            b. 3 hari kerja
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q27" value="2">
-                            c. 7 hari kerja
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q27" value="3">
-                            d. 14 hari kerja
-                        </label>
-                    </li>
-        
-                </ul>
-                <div class="explanation" id="exp27">Jawaban benar: b</div>
-            </div>
-    
-            <div class="question" id="q28">
-                <p class="question-text">29. (KASUS) Budi menempuh S1 mandiri dan tidak diberhentikan dari jabatannya. Berapa tunjangan kinerja yang ia terima?</p>
-                <ul class="options">
-    
-                    <li>
-                        <label>
-                            <input type="radio" name="q28" value="0">
-                            a. 50%
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q28" value="1">
-                            b. 75%
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q28" value="2">
-                            c. 100%
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q28" value="3">
-                            d. Tidak menerima
-                        </label>
-                    </li>
-        
-                </ul>
-                <div class="explanation" id="exp28">Jawaban benar: c</div>
-            </div>
-    
-            <div class="question" id="q29">
-                <p class="question-text">30. Ganti kerugian bagi PNS TB Dibiayai yang gagal studi (Drop Out) karena kesalahan sendiri adalah...</p>
-                <ul class="options">
-    
-                    <li>
-                        <label>
-                            <input type="radio" name="q29" value="0">
-                            a. Biaya pendidikan saja
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q29" value="1">
-                            b. Biaya pendidikan + denda 100%
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q29" value="2">
-                            c. Hanya denda saja
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q29" value="3">
-                            d. Kembali bekerja tanpa sanksi
-                        </label>
-                    </li>
-        
-                </ul>
-                <div class="explanation" id="exp29">Jawaban benar: b</div>
-            </div>
-    
-            <div class="question" id="q30">
-                <p class="question-text">31. Syarat IPK minimal untuk mengikuti seleksi Tugas Belajar Dibiayai jenjang S2/S3 adalah...</p>
-                <ul class="options">
-    
-                    <li>
-                        <label>
-                            <input type="radio" name="q30" value="0">
-                            a. 2.75
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q30" value="1">
-                            b. 3.00
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q30" value="2">
-                            c. 3.25
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q30" value="3">
-                            d. 3.50
-                        </label>
-                    </li>
-        
-                </ul>
-                <div class="explanation" id="exp30">Jawaban benar: b</div>
-            </div>
-    
-            <div class="question" id="q31">
-                <p class="question-text">32. Masa studi normatif untuk jenjang S3 pada TB Mandiri adalah maksimal...</p>
-                <ul class="options">
-    
-                    <li>
-                        <label>
-                            <input type="radio" name="q31" value="0">
-                            a. 4 tahun
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q31" value="1">
-                            b. 5 tahun
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q31" value="2">
-                            c. 6 tahun
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q31" value="3">
-                            d. 7 tahun
-                        </label>
-                    </li>
-        
-                </ul>
-                <div class="explanation" id="exp31">Jawaban benar: c</div>
-            </div>
-    
-            <div class="question" id="q32">
-                <p class="question-text">33. PNS dapat diberikan perpanjangan masa studi Tugas Belajar maksimal...</p>
-                <ul class="options">
-    
-                    <li>
-                        <label>
-                            <input type="radio" name="q32" value="0">
-                            a. 1 semester
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q32" value="1">
-                            b. 2 semester
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q32" value="2">
-                            c. 3 semester
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q32" value="3">
-                            d. 4 semester
-                        </label>
-                    </li>
-        
-                </ul>
-                <div class="explanation" id="exp32">Jawaban benar: b</div>
-            </div>
-    
-            <div class="question" id="q33">
-                <p class="question-text">34. Salah satu alasan pembatalan tugas belajar adalah...</p>
-                <ul class="options">
-    
-                    <li>
-                        <label>
-                            <input type="radio" name="q33" value="0">
-                            a. Mendapat nilai A
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q33" value="1">
-                            b. Menjadi anggota partai politik
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q33" value="2">
-                            c. Menikah
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q33" value="3">
-                            d. Pindah rumah
-                        </label>
-                    </li>
-        
-                </ul>
-                <div class="explanation" id="exp33">Jawaban benar: b</div>
-            </div>
-    
-            <div class="question" id="q34">
-                <p class="question-text">35. Tugas Belajar Mandiri Tidak Diberhentikan dapat dilaksanakan jika lokasi pendidikan...</p>
-                <ul class="options">
-    
-                    <li>
-                        <label>
-                            <input type="radio" name="q34" value="0">
-                            a. Di luar negeri
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q34" value="1">
-                            b. Berada dalam satu wilayah kerja dan tidak mengganggu tugas
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q34" value="2">
-                            c. Minimal 500 km dari kantor
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q34" value="3">
-                            d. Hanya dilakukan saat akhir pekan
-                        </label>
-                    </li>
-        
-                </ul>
-                <div class="explanation" id="exp34">Jawaban benar: b</div>
-            </div>
-    
-            <div class="question" id="q35">
-                <p class="question-text">36. (KASUS) PNS yang sedang TB Diberhentikan ingin naik pangkat. Syaratnya adalah...</p>
-                <ul class="options">
-    
-                    <li>
-                        <label>
-                            <input type="radio" name="q35" value="0">
-                            a. Sudah lulus dan diaktifkan kembali
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q35" value="1">
-                            b. Cukup dengan surat keterangan aktif kuliah
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q35" value="2">
-                            c. Minimal sudah kuliah 1 tahun
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q35" value="3">
-                            d. Tidak bisa naik pangkat saat TB
-                        </label>
-                    </li>
-        
-                </ul>
-                <div class="explanation" id="exp35">Jawaban benar: a</div>
-            </div>
-    
-            <div class="question" id="q36">
-                <p class="question-text">37. Masa ikatan dinas bagi PNS TB Dibiayai adalah...</p>
-                <ul class="options">
-    
-                    <li>
-                        <label>
-                            <input type="radio" name="q36" value="0">
-                            a. 1 x masa studi
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q36" value="1">
-                            b. 2 x masa studi
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q36" value="2">
-                            c. 3 x masa studi
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q36" value="3">
-                            d. 5 tahun flat
-                        </label>
-                    </li>
-        
-                </ul>
-                <div class="explanation" id="exp36">Jawaban benar: b</div>
-            </div>
-    
-            <div class="question" id="q37">
-                <p class="question-text">38. PNS TB Dibiayai yang mengundurkan diri saat masa ikatan dinas wajib...</p>
-                <ul class="options">
-    
-                    <li>
-                        <label>
-                            <input type="radio" name="q37" value="0">
-                            a. Membayar denda 100%
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q37" value="1">
-                            b. Mengembalikan seluruh biaya + denda 100%
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q37" value="2">
-                            c. Hanya minta maaf
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q37" value="3">
-                            d. Bekerja di instansi lain
-                        </label>
-                    </li>
-        
-                </ul>
-                <div class="explanation" id="exp37">Jawaban benar: b</div>
-            </div>
-    
-            <div class="question" id="q38">
-                <p class="question-text">39. Izin luar negeri bagi PNS TB Mandiri yang ingin riset di luar negeri dikeluarkan oleh...</p>
-                <ul class="options">
-    
-                    <li>
-                        <label>
-                            <input type="radio" name="q38" value="0">
-                            a. Kepala Kantor
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q38" value="1">
-                            b. Sekretaris Jenderal
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q38" value="2">
-                            c. Menteri PANRB
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q38" value="3">
-                            d. Presiden
-                        </label>
-                    </li>
-        
-                </ul>
-                <div class="explanation" id="exp38">Jawaban benar: b</div>
-            </div>
-    
-            <div class="question" id="q39">
-                <p class="question-text">40. Hak PNS selama Tugas Belajar meliputi hal berikut, KECUALI...</p>
-                <ul class="options">
-    
-                    <li>
-                        <label>
-                            <input type="radio" name="q39" value="0">
-                            a. Gaji
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q39" value="1">
-                            b. Tunjangan Kinerja (sesuai persentase)
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q39" value="2">
-                            c. Uang lembur kantor
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q39" value="3">
-                            d. Evaluasi Kinerja
-                        </label>
-                    </li>
-        
-                </ul>
-                <div class="explanation" id="exp39">Jawaban benar: c</div>
-            </div>
-    
-            <div class="question" id="q40">
-                <p class="question-text">41. Prinsip manajemen kinerja ASN adalah...</p>
-                <ul class="options">
-    
-                    <li>
-                        <label>
-                            <input type="radio" name="q40" value="0">
-                            a. Subjektivitas atasan
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q40" value="1">
-                            b. Hasil kerja dan Perilaku kerja
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q40" value="2">
-                            c. Senioritas
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q40" value="3">
-                            d. Jumlah laporan bulanan
-                        </label>
-                    </li>
-        
-                </ul>
-                <div class="explanation" id="exp40">Jawaban benar: b</div>
-            </div>
-    
-            <div class="question" id="q41">
-                <p class="question-text">42. Penilaian kinerja ASN menggunakan skala predikat, salah satunya adalah...</p>
-                <ul class="options">
-    
-                    <li>
-                        <label>
-                            <input type="radio" name="q41" value="0">
-                            a. Istimewa
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q41" value="1">
-                            b. Sangat Baik
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q41" value="2">
-                            c. Cumlaude
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q41" value="3">
-                            d. Lulus
-                        </label>
-                    </li>
-        
-                </ul>
-                <div class="explanation" id="exp41">Jawaban benar: b</div>
-            </div>
-    
-            <div class="question" id="q42">
-                <p class="question-text">43. Dialog kinerja antara pimpinan dan pegawai bertujuan untuk...</p>
-                <ul class="options">
-    
-                    <li>
-                        <label>
-                            <input type="radio" name="q42" value="0">
-                            a. Mencari kesalahan
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q42" value="1">
-                            b. Memberikan feedback dan ekspektasi pimpinan
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q42" value="2">
-                            c. Menentukan hukuman disiplin
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q42" value="3">
-                            d. Mengurangi beban kerja
-                        </label>
-                    </li>
-        
-                </ul>
-                <div class="explanation" id="exp42">Jawaban benar: b</div>
-            </div>
-    
-            <div class="question" id="q43">
-                <p class="question-text">44. (KASUS) Jika capaian IKU pegawai 100% tapi perilaku 'Berorientasi Pelayanan' dinilai buruk, predikat kinerjanya bisa menjadi...</p>
-                <ul class="options">
-    
-                    <li>
-                        <label>
-                            <input type="radio" name="q43" value="0">
-                            a. Sangat Baik
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q43" value="1">
-                            b. Baik
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q43" value="2">
-                            c. Cukup/Butuh Perbaikan
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q43" value="3">
-                            d. Sangat Kurang
-                        </label>
-                    </li>
-        
-                </ul>
-                <div class="explanation" id="exp43">Jawaban benar: c</div>
-            </div>
-    
-            <div class="question" id="q44">
-                <p class="question-text">45. Aplikasi pengelolaan kinerja di Kementerian Keuangan adalah...</p>
-                <ul class="options">
-    
-                    <li>
-                        <label>
-                            <input type="radio" name="q44" value="0">
-                            a. SIKKA
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q44" value="1">
-                            b. e-Performance / SEMANTIK
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q44" value="2">
-                            c. DGT Digital
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q44" value="3">
-                            d. MyASN
-                        </label>
-                    </li>
-        
-                </ul>
-                <div class="explanation" id="exp44">Jawaban benar: b</div>
-            </div>
-    
-            <div class="question" id="q45">
-                <p class="question-text">46. UMP (Usulan Mutasi Pegawai) merupakan salah satu bentuk...</p>
-                <ul class="options">
-    
-                    <li>
-                        <label>
-                            <input type="radio" name="q45" value="0">
-                            a. Perencanaan kinerja
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q45" value="1">
-                            b. Evaluasi kinerja
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q45" value="2">
-                            c. Tindak lanjut hasil kinerja
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q45" value="3">
-                            d. Hukuman kinerja
-                        </label>
-                    </li>
-        
-                </ul>
-                <div class="explanation" id="exp45">Jawaban benar: c</div>
-            </div>
-    
-            <div class="question" id="q46">
-                <p class="question-text">47. Penyusunan Sasaran Kinerja Pegawai (SKP) dilakukan pada...</p>
-                <ul class="options">
-    
-                    <li>
-                        <label>
-                            <input type="radio" name="q46" value="0">
-                            a. Awal tahun
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q46" value="1">
-                            b. Tengah tahun
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q46" value="2">
-                            c. Akhir tahun
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q46" value="3">
-                            d. Kapan saja
-                        </label>
-                    </li>
-        
-                </ul>
-                <div class="explanation" id="exp46">Jawaban benar: a</div>
-            </div>
-    
-            <div class="question" id="q47">
-                <p class="question-text">48. Komponen perilaku kerja dalam SKP mengacu pada...</p>
-                <ul class="options">
-    
-                    <li>
-                        <label>
-                            <input type="radio" name="q47" value="0">
-                            a. Integritas saja
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q47" value="1">
-                            b. Core Values BerAKHLAK
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q47" value="2">
-                            c. Kehadiran fisik
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q47" value="3">
-                            d. Kecepatan mengetik
-                        </label>
-                    </li>
-        
-                </ul>
-                <div class="explanation" id="exp47">Jawaban benar: b</div>
-            </div>
-    
-            <div class="question" id="q48">
-                <p class="question-text">49. Pejabat penilai kinerja adalah...</p>
-                <ul class="options">
-    
-                    <li>
-                        <label>
-                            <input type="radio" name="q48" value="0">
-                            a. Rekan sejawat
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q48" value="1">
-                            b. Atasan Langsung
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q48" value="2">
-                            c. Kepala Bagian Kepegawaian
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q48" value="3">
-                            d. Direktur KITSDA
-                        </label>
-                    </li>
-        
-                </ul>
-                <div class="explanation" id="exp48">Jawaban benar: b</div>
-            </div>
-    
-            <div class="question" id="q49">
-                <p class="question-text">50. Feedback (umpan balik) yang baik bersifat...</p>
-                <ul class="options">
-    
-                    <li>
-                        <label>
-                            <input type="radio" name="q49" value="0">
-                            a. Sekali setahun
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q49" value="1">
-                            b. Konstruktif dan berkelanjutan
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q49" value="2">
-                            c. Hanya melalui surat resmi
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q49" value="3">
-                            d. Rahasia dari pegawai
-                        </label>
-                    </li>
-        
-                </ul>
-                <div class="explanation" id="exp49">Jawaban benar: b</div>
-            </div>
-    
-            <div class="question" id="q50">
-                <p class="question-text">51. IKU (Indikator Kinerja Utama) harus memenuhi kriteria...</p>
-                <ul class="options">
-    
-                    <li>
-                        <label>
-                            <input type="radio" name="q50" value="0">
-                            a. SMART (Specific, Measurable, etc.)
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q50" value="1">
-                            b. SWOT
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q50" value="2">
-                            c. FAST
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q50" value="3">
-                            d. SAFE
-                        </label>
-                    </li>
-        
-                </ul>
-                <div class="explanation" id="exp50">Jawaban benar: a</div>
-            </div>
-    
-            <div class="question" id="q51">
-                <p class="question-text">52. Penilaian kinerja periodik biasanya dilakukan setiap...</p>
-                <ul class="options">
-    
-                    <li>
-                        <label>
-                            <input type="radio" name="q51" value="0">
-                            a. Minggu
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q51" value="1">
-                            b. Bulan/Triwulan
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q51" value="2">
-                            c. Dua tahun
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q51" value="3">
-                            d. Saat promosi
-                        </label>
-                    </li>
-        
-                </ul>
-                <div class="explanation" id="exp51">Jawaban benar: b</div>
-            </div>
-    
-            <div class="question" id="q52">
-                <p class="question-text">53. Budaya kinerja di DJP menekankan pada...</p>
-                <ul class="options">
-    
-                    <li>
-                        <label>
-                            <input type="radio" name="q52" value="0">
-                            a. Kerja lembur terus menerus
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q52" value="1">
-                            b. Penyempurnaan berkelanjutan
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q52" value="2">
-                            c. Kepatuhan tanpa kritik
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q52" value="3">
-                            d. Penghematan kertas
-                        </label>
-                    </li>
-        
-                </ul>
-                <div class="explanation" id="exp52">Jawaban benar: b</div>
-            </div>
-    
-            <div class="question" id="q53">
-                <p class="question-text">54. Jika pegawai tidak setuju dengan hasil penilaian kinerja, ia dapat...</p>
-                <ul class="options">
-    
-                    <li>
-                        <label>
-                            <input type="radio" name="q53" value="0">
-                            a. Berhenti bekerja
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q53" value="1">
-                            b. Mengajukan keberatan sesuai prosedur
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q53" value="2">
-                            c. Menghapus data di aplikasi
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q53" value="3">
-                            d. Lapor ke polisi
-                        </label>
-                    </li>
-        
-                </ul>
-                <div class="explanation" id="exp53">Jawaban benar: b</div>
-            </div>
-    
-            <div class="question" id="q54">
-                <p class="question-text">55. Hasil evaluasi kinerja digunakan untuk...</p>
-                <ul class="options">
-    
-                    <li>
-                        <label>
-                            <input type="radio" name="q54" value="0">
-                            a. Pengembangan karier dan penghargaan
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q54" value="1">
-                            b. Menentukan jatah makan
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q54" value="2">
-                            c. Mengganti seragam
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q54" value="3">
-                            d. Hanya arsip
-                        </label>
-                    </li>
-        
-                </ul>
-                <div class="explanation" id="exp54">Jawaban benar: a</div>
-            </div>
-    
-            <div class="question" id="q55">
-                <p class="question-text">56. Jabatan Pelaksana di Kemenkeu dibedakan menjadi...</p>
-                <ul class="options">
-    
-                    <li>
-                        <label>
-                            <input type="radio" name="q55" value="0">
-                            a. Umum, Khusus, Tugas Belajar, Tertentu
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q55" value="1">
-                            b. Teknis dan Administrasi
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q55" value="2">
-                            c. Eselon IV dan Eselon V
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q55" value="3">
-                            d. Junior dan Senior
-                        </label>
-                    </li>
-        
-                </ul>
-                <div class="explanation" id="exp55">Jawaban benar: a</div>
-            </div>
-    
-            <div class="question" id="q56">
-                <p class="question-text">57. Peringkat jabatan (grading) tertinggi untuk jabatan pelaksana umum (S1) adalah...</p>
-                <ul class="options">
-    
-                    <li>
-                        <label>
-                            <input type="radio" name="q56" value="0">
-                            a. 7
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q56" value="1">
-                            b. 8
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q56" value="2">
-                            c. 9
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q56" value="3">
-                            d. 10
-                        </label>
-                    </li>
-        
-                </ul>
-                <div class="explanation" id="exp56">Jawaban benar: c</div>
-            </div>
-    
-            <div class="question" id="q57">
-                <p class="question-text">58. (KASUS) Ani lulusan SMA (II/a) masuk pertama kali. Peringkat jabatannya (grading) adalah...</p>
-                <ul class="options">
-    
-                    <li>
-                        <label>
-                            <input type="radio" name="q57" value="0">
-                            a. 5
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q57" value="1">
-                            b. 6
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q57" value="2">
-                            c. 7
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q57" value="3">
-                            d. 8
-                        </label>
-                    </li>
-        
-                </ul>
-                <div class="explanation" id="exp57">Jawaban benar: a</div>
-            </div>
-    
-            <div class="question" id="q58">
-                <p class="question-text">59. Perubahan peringkat jabatan (grading) dapat dilakukan jika...</p>
-                <ul class="options">
-    
-                    <li>
-                        <label>
-                            <input type="radio" name="q58" value="0">
-                            a. Pegawai berulang tahun
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q58" value="1">
-                            b. Peningkatan pendidikan atau promosi jabatan
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q58" value="2">
-                            c. Masa kerja mencapai 10 tahun tanpa syarat
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q58" value="3">
-                            d. Mutasi ke kantor pusat
-                        </label>
-                    </li>
-        
-                </ul>
-                <div class="explanation" id="exp58">Jawaban benar: b</div>
-            </div>
-    
-            <div class="question" id="q59">
-                <p class="question-text">60. Jabatan Pelaksana Khusus diberikan kepada pegawai yang...</p>
-                <ul class="options">
-    
-                    <li>
-                        <label>
-                            <input type="radio" name="q59" value="0">
-                            a. Sedang dihukum
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q59" value="1">
-                            b. Memiliki sertifikasi/keahlian khusus yang ditetapkan
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q59" value="2">
-                            c. Baru lulus CPNS
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q59" value="3">
-                            d. Akan pensiun bulan depan
-                        </label>
-                    </li>
-        
-                </ul>
-                <div class="explanation" id="exp59">Jawaban benar: b</div>
-            </div>
-    
-            <div class="question" id="q60">
-                <p class="question-text">61. Siapa yang menetapkan peringkat jabatan pelaksana di DJP?</p>
-                <ul class="options">
-    
-                    <li>
-                        <label>
-                            <input type="radio" name="q60" value="0">
-                            a. Kepala Kantor Pajak
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q60" value="1">
-                            b. Dirjen Pajak / Pejabat yang ditunjuk
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q60" value="2">
-                            c. Menteri Keuangan langsung
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q60" value="3">
-                            d. Kepala BKN
-                        </label>
-                    </li>
-        
-                </ul>
-                <div class="explanation" id="exp60">Jawaban benar: b</div>
-            </div>
-    
-            <div class="question" id="q61">
-                <p class="question-text">62. Syarat minimal pangkat untuk menduduki grading 9 (Pelaksana Umum) adalah...</p>
-                <ul class="options">
-    
-                    <li>
-                        <label>
-                            <input type="radio" name="q61" value="0">
-                            a. II/c
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q61" value="1">
-                            b. III/a
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q61" value="2">
-                            c. III/b
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q61" value="3">
-                            d. III/c
-                        </label>
-                    </li>
-        
-                </ul>
-                <div class="explanation" id="exp61">Jawaban benar: b</div>
-            </div>
-    
-            <div class="question" id="q62">
-                <p class="question-text">63. Pegawai yang sedang TB Diberhentikan menduduki jabatan...</p>
-                <ul class="options">
-    
-                    <li>
-                        <label>
-                            <input type="radio" name="q62" value="0">
-                            a. Pelaksana Umum
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q62" value="1">
-                            b. Pelaksana Tugas Belajar
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q62" value="2">
-                            c. Pelaksana Khusus
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q62" value="3">
-                            d. Fungsional
-                        </label>
-                    </li>
-        
-                </ul>
-                <div class="explanation" id="exp62">Jawaban benar: b</div>
-            </div>
-    
-            <div class="question" id="q63">
-                <p class="question-text">64. Grading (peringkat) berhubungan langsung dengan besaran...</p>
-                <ul class="options">
-    
-                    <li>
-                        <label>
-                            <input type="radio" name="q63" value="0">
-                            a. Gaji pokok
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q63" value="1">
-                            b. Tunjangan Kinerja
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q63" value="2">
-                            c. Uang makan
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q63" value="3">
-                            d. Uang lembur
-                        </label>
-                    </li>
-        
-                </ul>
-                <div class="explanation" id="exp63">Jawaban benar: b</div>
-            </div>
-    
-            <div class="question" id="q64">
-                <p class="question-text">65. Penetapan peringkat pertama bagi CPNS dilakukan berdasarkan...</p>
-                <ul class="options">
-    
-                    <li>
-                        <label>
-                            <input type="radio" name="q64" value="0">
-                            a. Hasil ujian masuk
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q64" value="1">
-                            b. Ijazah saat pengangkatan
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q64" value="2">
-                            c. Usia
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q64" value="3">
-                            d. Urutan abjad
-                        </label>
-                    </li>
-        
-                </ul>
-                <div class="explanation" id="exp64">Jawaban benar: b</div>
-            </div>
-    
-            <div class="question" id="q65">
-                <p class="question-text">66. PNS berhak cuti tahunan selama 12 hari kerja jika telah bekerja...</p>
-                <ul class="options">
-    
-                    <li>
-                        <label>
-                            <input type="radio" name="q65" value="0">
-                            a. 6 bulan
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q65" value="1">
-                            b. 1 tahun terus menerus
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q65" value="2">
-                            c. 2 tahun
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q65" value="3">
-                            d. 3 bulan
-                        </label>
-                    </li>
-        
-                </ul>
-                <div class="explanation" id="exp65">Jawaban benar: b</div>
-            </div>
-    
-            <div class="question" id="q66">
-                <p class="question-text">67. Lama maksimal cuti besar adalah...</p>
-                <ul class="options">
-    
-                    <li>
-                        <label>
-                            <input type="radio" name="q66" value="0">
-                            a. 1 bulan
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q66" value="1">
-                            b. 2 bulan
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q66" value="2">
-                            c. 3 bulan
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q66" value="3">
-                            d. 6 bulan
-                        </label>
-                    </li>
-        
-                </ul>
-                <div class="explanation" id="exp66">Jawaban benar: c</div>
-            </div>
-    
-            <div class="question" id="q67">
-                <p class="question-text">68. Syarat mengambil cuti besar selain haji pertama adalah masa kerja minimal...</p>
-                <ul class="options">
-    
-                    <li>
-                        <label>
-                            <input type="radio" name="q67" value="0">
-                            a. 3 tahun
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q67" value="1">
-                            b. 5 tahun terus menerus
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q67" value="2">
-                            c. 10 tahun
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q67" value="3">
-                            d. 15 tahun
-                        </label>
-                    </li>
-        
-                </ul>
-                <div class="explanation" id="exp67">Jawaban benar: b</div>
-            </div>
-    
-            <div class="question" id="q68">
-                <p class="question-text">69. (KASUS) Cuti Besar Haji pertama kali mendapatkan potongan tunjangan kinerja sebesar...</p>
-                <ul class="options">
-    
-                    <li>
-                        <label>
-                            <input type="radio" name="q68" value="0">
-                            a. 0% selama haji
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q68" value="1">
-                            b. 2,5% selama haji
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q68" value="2">
-                            c. 5% flat
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q68" value="3">
-                            d. 10%
-                        </label>
-                    </li>
-        
-                </ul>
-                <div class="explanation" id="exp68">Jawaban benar: a</div>
-            </div>
-    
-            <div class="question" id="q69">
-                <p class="question-text">70. Potongan tunjangan kinerja untuk PNS yang tidak masuk bekerja (tanpa izin) adalah...</p>
-                <ul class="options">
-    
-                    <li>
-                        <label>
-                            <input type="radio" name="q69" value="0">
-                            a. 1% per hari
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q69" value="1">
-                            b. 2,5% per hari
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q69" value="2">
-                            c. 5% per hari
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q69" value="3">
-                            d. 10% per hari
-                        </label>
-                    </li>
-        
-                </ul>
-                <div class="explanation" id="exp69">Jawaban benar: c</div>
-            </div>
-    
-            <div class="question" id="q70">
-                <p class="question-text">71. (KASUS) Terlambat masuk kerja (TL) kategori 1 adalah...</p>
-                <ul class="options">
-    
-                    <li>
-                        <label>
-                            <input type="radio" name="q70" value="0">
-                            a. 08.01 - 08.30
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q70" value="1">
-                            b. 09.01 - 09.30
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q70" value="2">
-                            c. 07.31 - 08.00
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q70" value="3">
-                            d. Bebas
-                        </label>
-                    </li>
-        
-                </ul>
-                <div class="explanation" id="exp70">Jawaban benar: a</div>
-            </div>
-    
-            <div class="question" id="q71">
-                <p class="question-text">72. Potongan untuk TL 3 (> 60 menit atau tidak absen masuk) adalah...</p>
-                <ul class="options">
-    
-                    <li>
-                        <label>
-                            <input type="radio" name="q71" value="0">
-                            a. 1%
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q71" value="1">
-                            b. 1,25%
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q71" value="2">
-                            c. 2,5%
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q71" value="3">
-                            d. 5%
-                        </label>
-                    </li>
-        
-                </ul>
-                <div class="explanation" id="exp71">Jawaban benar: c</div>
-            </div>
-    
-            <div class="question" id="q72">
-                <p class="question-text">73. Batas waktu input izin di SIKKA adalah ... hari kerja setelah kejadian.</p>
-                <ul class="options">
-    
-                    <li>
-                        <label>
-                            <input type="radio" name="q72" value="0">
-                            a. 1
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q72" value="1">
-                            b. 2
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q72" value="2">
-                            c. 3
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q72" value="3">
-                            d. 5
-                        </label>
-                    </li>
-        
-                </ul>
-                <div class="explanation" id="exp72">Jawaban benar: c</div>
-            </div>
-    
-            <div class="question" id="q73">
-                <p class="question-text">74. Cuti Alasan Penting (CAP) diberikan maksimal selama...</p>
-                <ul class="options">
-    
-                    <li>
-                        <label>
-                            <input type="radio" name="q73" value="0">
-                            a. 15 hari
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q73" value="1">
-                            b. 1 bulan
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q73" value="2">
-                            c. 2 bulan
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q73" value="3">
-                            d. 3 bulan
-                        </label>
-                    </li>
-        
-                </ul>
-                <div class="explanation" id="exp73">Jawaban benar: b</div>
-            </div>
-    
-            <div class="question" id="q74">
-                <p class="question-text">75. Izin bersalin (Cuti Melahirkan) anak pertama s.d ketiga diberikan selama...</p>
-                <ul class="options">
-    
-                    <li>
-                        <label>
-                            <input type="radio" name="q74" value="0">
-                            a. 1 bulan
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q74" value="1">
-                            b. 2 bulan
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q74" value="2">
-                            c. 3 bulan
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q74" value="3">
-                            d. 4 bulan
-                        </label>
-                    </li>
-        
-                </ul>
-                <div class="explanation" id="exp74">Jawaban benar: c</div>
-            </div>
-    
-            <div class="question" id="q75">
-                <p class="question-text">76. Cuti di Luar Tanggungan Negara (CLTN) dapat diberikan paling lama...</p>
-                <ul class="options">
-    
-                    <li>
-                        <label>
-                            <input type="radio" name="q75" value="0">
-                            a. 1 tahun
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q75" value="1">
-                            b. 3 tahun (bisa diperpanjang 1 thn)
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q75" value="2">
-                            c. 5 tahun
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q75" value="3">
-                            d. Selamanya
-                        </label>
-                    </li>
-        
-                </ul>
-                <div class="explanation" id="exp75">Jawaban benar: b</div>
-            </div>
-    
-            <div class="question" id="q76">
-                <p class="question-text">77. Pegawai yang CLTN maka status kepegawaiannya...</p>
-                <ul class="options">
-    
-                    <li>
-                        <label>
-                            <input type="radio" name="q76" value="0">
-                            a. Tetap menerima gaji
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q76" value="1">
-                            b. Masa kerja tidak dihitung dan tidak menerima penghasilan
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q76" value="2">
-                            c. Bisa naik pangkat otomatis
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q76" value="3">
-                            d. Wajib masuk seminggu sekali
-                        </label>
-                    </li>
-        
-                </ul>
-                <div class="explanation" id="exp76">Jawaban benar: b</div>
-            </div>
-    
-            <div class="question" id="q77">
-                <p class="question-text">78. PNS pria berhak mendapatkan cuti pendampingan istri melahirkan (Cuti Ayah) selama...</p>
-                <ul class="options">
-    
-                    <li>
-                        <label>
-                            <input type="radio" name="q77" value="0">
-                            a. 1 hari
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q77" value="1">
-                            b. Maksimal 1 bulan (CAP)
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q77" value="2">
-                            c. Tidak ada
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q77" value="3">
-                            d. 5 hari
-                        </label>
-                    </li>
-        
-                </ul>
-                <div class="explanation" id="exp77">Jawaban benar: b</div>
-            </div>
-    
-            <div class="question" id="q78">
-                <p class="question-text">79. Cuti Sakit lebih dari ... hari harus menggunakan surat keterangan dokter.</p>
-                <ul class="options">
-    
-                    <li>
-                        <label>
-                            <input type="radio" name="q78" value="0">
-                            a. 1
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q78" value="1">
-                            b. 2
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q78" value="2">
-                            c. 5
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q78" value="3">
-                            d. 14
-                        </label>
-                    </li>
-        
-                </ul>
-                <div class="explanation" id="exp78">Jawaban benar: a</div>
-            </div>
-    
-            <div class="question" id="q79">
-                <p class="question-text">80. PSW (Pulang Sebelum Waktunya) kategori 4 adalah jika pulang lebih awal $\ge$ ... menit.</p>
-                <ul class="options">
-    
-                    <li>
-                        <label>
-                            <input type="radio" name="q79" value="0">
-                            a. 31
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q79" value="1">
-                            b. 61
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q79" value="2">
-                            c. 91
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q79" value="3">
-                            d. 121
-                        </label>
-                    </li>
-        
-                </ul>
-                <div class="explanation" id="exp79">Jawaban benar: c</div>
-            </div>
-    
-            <div class="question" id="q80">
-                <p class="question-text">81. Cuti Tahunan tambahan bagi daerah remote klasifikasi IV adalah...</p>
-                <ul class="options">
-    
-                    <li>
-                        <label>
-                            <input type="radio" name="q80" value="0">
-                            a. 3 hari
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q80" value="1">
-                            b. 6 hari
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q80" value="2">
-                            c. 9 hari
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q80" value="3">
-                            d. 12 hari
-                        </label>
-                    </li>
-        
-                </ul>
-                <div class="explanation" id="exp80">Jawaban benar: d</div>
-            </div>
-    
-            <div class="question" id="q81">
-                <p class="question-text">82. Izin ke luar negeri urusan pribadi harus mendapat persetujuan dari...</p>
-                <ul class="options">
-    
-                    <li>
-                        <label>
-                            <input type="radio" name="q81" value="0">
-                            a. Kepala Seksi
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q81" value="1">
-                            b. Atasan setingkat Eselon II
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q81" value="2">
-                            c. Sekretaris Jenderal
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q81" value="3">
-                            d. Cukup lapor satpam
-                        </label>
-                    </li>
-        
-                </ul>
-                <div class="explanation" id="exp81">Jawaban benar: c</div>
-            </div>
-    
-            <div class="question" id="q82">
-                <p class="question-text">83. Presensi flexy time di hari Senin biasanya memberikan toleransi selama...</p>
-                <ul class="options">
-    
-                    <li>
-                        <label>
-                            <input type="radio" name="q82" value="0">
-                            a. 30 menit
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q82" value="1">
-                            b. 60 menit
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q82" value="2">
-                            c. 90 menit
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q82" value="3">
-                            d. 120 menit
-                        </label>
-                    </li>
-        
-                </ul>
-                <div class="explanation" id="exp82">Jawaban benar: c</div>
-            </div>
-    
-            <div class="question" id="q83">
-                <p class="question-text">84. Berita Acara Lupa Absen harus dilampiri bukti...</p>
-                <ul class="options">
-    
-                    <li>
-                        <label>
-                            <input type="radio" name="q83" value="0">
-                            a. Foto selfie
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q83" value="1">
-                            b. Tangkapan layar CCTV
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q83" value="2">
-                            c. Surat pernyataan teman
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q83" value="3">
-                            d. Struk belanja
-                        </label>
-                    </li>
-        
-                </ul>
-                <div class="explanation" id="exp83">Jawaban benar: b</div>
-            </div>
-    
-            <div class="question" id="q84">
-                <p class="question-text">85. Pemberhentian sementara dilakukan jika PNS ditahan karena...</p>
-                <ul class="options">
-    
-                    <li>
-                        <label>
-                            <input type="radio" name="q84" value="0">
-                            a. Tilang lalin
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q84" value="1">
-                            b. Menjadi tersangka/terdakwa tindak pidana
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q84" value="2">
-                            c. Utang piutang
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q84" value="3">
-                            d. Sengketa tanah pribadi
-                        </label>
-                    </li>
-        
-                </ul>
-                <div class="explanation" id="exp84">Jawaban benar: b</div>
-            </div>
-    
-            <div class="question" id="q85">
-                <p class="question-text">86. Penghargaan Nagara Dana Rakca diberikan kepada pegawai yang...</p>
-                <ul class="options">
-    
-                    <li>
-                        <label>
-                            <input type="radio" name="q85" value="0">
-                            a. Masa kerja 30 thn
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q85" value="1">
-                            b. Prestasi luar biasa bagi institusi/negara
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q85" value="2">
-                            c. Lulus diklat
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q85" value="3">
-                            d. Pindah kantor
-                        </label>
-                    </li>
-        
-                </ul>
-                <div class="explanation" id="exp85">Jawaban benar: b</div>
-            </div>
-    
-            <div class="question" id="q86">
-                <p class="question-text">87. KPLB adalah singkatan dari...</p>
-                <ul class="options">
-    
-                    <li>
-                        <label>
-                            <input type="radio" name="q86" value="0">
-                            a. Kenaikan Pangkat Luar Biasa
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q86" value="1">
-                            b. Kursus Pelatihan Luar Biasa
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q86" value="2">
-                            c. Kompensasi Pegawai Lepas Berkala
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q86" value="3">
-                            d. Kredit Pegawai Luar Biasa
-                        </label>
-                    </li>
-        
-                </ul>
-                <div class="explanation" id="exp86">Jawaban benar: a</div>
-            </div>
-    
-            <div class="question" id="q87">
-                <p class="question-text">88. Bentuk penghargaan di Kemenkeu meliputi...</p>
-                <ul class="options">
-    
-                    <li>
-                        <label>
-                            <input type="radio" name="q87" value="0">
-                            a. Piagam dan Medali
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q87" value="1">
-                            b. Hanya uang tunai
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q87" value="2">
-                            c. Pembebasan pajak pribadi
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q87" value="3">
-                            d. Mobil dinas pribadi
-                        </label>
-                    </li>
-        
-                </ul>
-                <div class="explanation" id="exp87">Jawaban benar: a</div>
-            </div>
-    
-            <div class="question" id="q88">
-                <p class="question-text">89. Satyalancana Karya Satya 20 tahun diberikan medali berwarna...</p>
-                <ul class="options">
-    
-                    <li>
-                        <label>
-                            <input type="radio" name="q88" value="0">
-                            a. Perunggu
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q88" value="1">
-                            b. Perak
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q88" value="2">
-                            c. Emas
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q88" value="3">
-                            d. Berlian
-                        </label>
-                    </li>
-        
-                </ul>
-                <div class="explanation" id="exp88">Jawaban benar: b</div>
-            </div>
-    
-            <div class="question" id="q89">
-                <p class="question-text">90. Pengusulan KPLB bagi PNS Kemenkeu disampaikan oleh...</p>
-                <ul class="options">
-    
-                    <li>
-                        <label>
-                            <input type="radio" name="q89" value="0">
-                            a. Pegawai sendiri
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q89" value="1">
-                            b. Pimpinan Unit Eselon I kepada Menteri Keuangan
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q89" value="2">
-                            c. Kepala BKN
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q89" value="3">
-                            d. Gubernur
-                        </label>
-                    </li>
-        
-                </ul>
-                <div class="explanation" id="exp89">Jawaban benar: b</div>
-            </div>
-    
-            <div class="question" id="q90">
-                <p class="question-text">91. (KASUS) Seorang pemeriksa pajak yang konsisten jujur dan berani menolak suap besar dapat diusulkan...</p>
-                <ul class="options">
-    
-                    <li>
-                        <label>
-                            <input type="radio" name="q90" value="0">
-                            a. Nagara Dana Rakca / Adhikarya
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q90" value="1">
-                            b. Cuti 1 tahun
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q90" value="2">
-                            c. Kenaikan gaji 10x
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q90" value="3">
-                            d. Pensiun dini
-                        </label>
-                    </li>
-        
-                </ul>
-                <div class="explanation" id="exp90">Jawaban benar: a</div>
-            </div>
-    
-            <div class="question" id="q91">
-                <p class="question-text">92. Penghargaan Nagara Dana Ksatria diberikan kepada pegawai yang...</p>
-                <ul class="options">
-    
-                    <li>
-                        <label>
-                            <input type="radio" name="q91" value="0">
-                            a. Juara lomba
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q91" value="1">
-                            b. Gugur/Tewas dalam tugas
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q91" value="2">
-                            c. Sakit parah
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q91" value="3">
-                            d. Pindah instansi
-                        </label>
-                    </li>
-        
-                </ul>
-                <div class="explanation" id="exp91">Jawaban benar: b</div>
-            </div>
-    
-            <div class="question" id="q92">
-                <p class="question-text">93. Batas waktu pengusulan penghargaan setelah prestasi diraih adalah...</p>
-                <ul class="options">
-    
-                    <li>
-                        <label>
-                            <input type="radio" name="q92" value="0">
-                            a. 1 bulan
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q92" value="1">
-                            b. 6 bulan
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q92" value="2">
-                            c. 1 tahun
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q92" value="3">
-                            d. Tidak terbatas
-                        </label>
-                    </li>
-        
-                </ul>
-                <div class="explanation" id="exp92">Jawaban benar: c</div>
-            </div>
-    
-            <div class="question" id="q93">
-                <p class="question-text">94. KPLB dapat diberikan jika pegawai menemukan...</p>
-                <ul class="options">
-    
-                    <li>
-                        <label>
-                            <input type="radio" name="q93" value="0">
-                            a. Uang di jalan
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q93" value="1">
-                            b. Inovasi yang diakui dan berdampak luas
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q93" value="2">
-                            c. Teman lama
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q93" value="3">
-                            d. Cara tidur cepat
-                        </label>
-                    </li>
-        
-                </ul>
-                <div class="explanation" id="exp93">Jawaban benar: b</div>
-            </div>
-    
-            <div class="question" id="q94">
-                <p class="question-text">95. Penghargaan tingkat nasional seperti Anugerah ASN diselenggarakan oleh...</p>
-                <ul class="options">
-    
-                    <li>
-                        <label>
-                            <input type="radio" name="q94" value="0">
-                            a. Kemenkeu
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q94" value="1">
-                            b. Kementerian PANRB
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q94" value="2">
-                            c. KPK
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q94" value="3">
-                            d. DPR
-                        </label>
-                    </li>
-        
-                </ul>
-                <div class="explanation" id="exp94">Jawaban benar: b</div>
-            </div>
-    
-            <div class="question" id="q95">
-                <p class="question-text">96. Kartu identitas elektronik bagi ASN disebut...</p>
-                <ul class="options">
-    
-                    <li>
-                        <label>
-                            <input type="radio" name="q95" value="0">
-                            a. Karpeg
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q95" value="1">
-                            b. Kartu ASN
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q95" value="2">
-                            c. ID Card Kantor
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q95" value="3">
-                            d. KTP-el
-                        </label>
-                    </li>
-        
-                </ul>
-                <div class="explanation" id="exp95">Jawaban benar: b</div>
-            </div>
-    
-            <div class="question" id="q96">
-                <p class="question-text">97. Laporan Perkawinan Pertama wajib disampaikan paling lambat ... setelah pernikahan.</p>
-                <ul class="options">
-    
-                    <li>
-                        <label>
-                            <input type="radio" name="q96" value="0">
-                            a. 1 bulan
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q96" value="1">
-                            b. 6 bulan
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q96" value="2">
-                            c. 1 tahun
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q96" value="3">
-                            d. 2 tahun
-                        </label>
-                    </li>
-        
-                </ul>
-                <div class="explanation" id="exp96">Jawaban benar: c</div>
-            </div>
-    
-            <div class="question" id="q97">
-                <p class="question-text">98. PNS pria yang akan bercerai wajib...</p>
-                <ul class="options">
-    
-                    <li>
-                        <label>
-                            <input type="radio" name="q97" value="0">
-                            a. Langsung ke pengadilan
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q97" value="1">
-                            b. Melapor dan meminta izin/surat keterangan dari atasan/PPK
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q97" value="2">
-                            c. Hanya lapor RT
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q97" value="3">
-                            d. Diam saja
-                        </label>
-                    </li>
-        
-                </ul>
-                <div class="explanation" id="exp97">Jawaban benar: b</div>
-            </div>
-    
-            <div class="question" id="q98">
-                <p class="question-text">99. Data keluarga dalam administrasi kepegawaian digunakan untuk...</p>
-                <ul class="options">
-    
-                    <li>
-                        <label>
-                            <input type="radio" name="q98" value="0">
-                            a. Tunjangan, asuransi, dan pensiun
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q98" value="1">
-                            b. Hanya hiasan
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q98" value="2">
-                            c. Menentukan lokasi mutasi
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q98" value="3">
-                            d. Mencari pengganti
-                        </label>
-                    </li>
-        
-                </ul>
-                <div class="explanation" id="exp98">Jawaban benar: a</div>
-            </div>
-    
-            <div class="question" id="q99">
-                <p class="question-text">100. Laporan perkawinan janda/duda melampirkan...</p>
-                <ul class="options">
-    
-                    <li>
-                        <label>
-                            <input type="radio" name="q99" value="0">
-                            a. Surat Kematian/Akta Cerai
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q99" value="1">
-                            b. Ijazah TK
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q99" value="2">
-                            c. KTP orang tua
-                        </label>
-                    </li>
-        
-                    <li>
-                        <label>
-                            <input type="radio" name="q99" value="3">
-                            d. Daftar hadir
-                        </label>
-                    </li>
-        
-                </ul>
-                <div class="explanation" id="exp99">Jawaban benar: a</div>
-            </div>
-    
-            <button type="button" class="btn" onclick="checkAnswers()">Cek Jawaban</button>
-        </form>
-        <div class="result" id="resultArea"></div>
+      <div id="quizContainer"></div>
     </div>
 
     <script>
-        const correctAnswers = [1, 1, 2, 1, 2, 3, 2, 1, 1, 1, 1, 2, 1, 0, 2, 0, 1, 2, 2, 1, 1, 2, 0, 2, 1, 1, 2, 1, 2, 1, 1, 2, 1, 1, 1, 0, 1, 1, 1, 2, 1, 1, 1, 2, 1, 2, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 2, 0, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 0, 2, 0, 2, 2, 1, 2, 1, 1, 1, 0, 2, 3, 2, 2, 1, 1, 1, 0, 0, 1, 1, 0, 1, 2, 1, 1, 1, 2, 1, 0, 0];
-        
-        function checkAnswers() {
-            let score = 0;
-            const total = correctAnswers.length;
-            
-            for (let i = 0; i < total; i++) {
-                const radios = document.getElementsByName('q' + i);
-                let selected = -1;
-                for (let r of radios) {
-                    if (r.checked) {
-                        selected = parseInt(r.value);
-                        break;
-                    }
-                }
-                
-                const questionDiv = document.getElementById('q' + i);
-                const expDiv = document.getElementById('exp' + i);
-                expDiv.style.display = 'block';
-                
-                if (selected === correctAnswers[i]) {
-                    score++;
-                    questionDiv.style.color = 'green';
-                } else {
-                    questionDiv.style.color = 'red';
-                }
-            }
-            
-            const resultArea = document.getElementById('resultArea');
-            resultArea.style.display = 'block';
-            resultArea.innerHTML = "Skor Anda: " + score + " / " + total + " (" + (score/total*100).toFixed(2) + "%)";
-            window.scrollTo(0, 0);
+      // Data pertanyaan diambil dari kode asli Anda
+      const questionsData = [
+        {
+          q: "1. Berdasarkan UU No. 20 Tahun 2023, ASN terdiri dari...",
+          opt: [
+            "PNS dan CPNS",
+            "PNS dan PPPK",
+            "PNS dan Pegawai Honorer",
+            "PNS dan Pegawai Kontrak",
+          ],
+          ans: 1,
+          key: "b",
+        },
+        {
+          q: "2. Batas usia pensiun bagi pejabat administrator dan pengawas adalah...",
+          opt: ["56 tahun", "58 tahun", "60 tahun", "65 tahun"],
+          ans: 1,
+          key: "b",
+        },
+        {
+          q: "3. Fungsi ASN menurut UU terbaru meliputi hal berikut, KECUALI...",
+          opt: [
+            "Pelaksana kebijakan publik",
+            "Pelayan publik",
+            "Pengawas keuangan negara",
+            "Perekat dan pemersatu bangsa",
+          ],
+          ans: 2,
+          key: "c",
+        },
+        {
+          q: "4. Nilai Dasar ASN 'BerAKHLAK' merupakan akronim, dimana huruf 'K' yang terakhir adalah...",
+          opt: ["Kompeten", "Kolaboratif", "Kompak", "Kreatif"],
+          ans: 1,
+          key: "b",
+        },
+        {
+          q: "5. Manakah yang termasuk Jabatan Manajerial?",
+          opt: [
+            "Jabatan Fungsional",
+            "Jabatan Pelaksana",
+            "Jabatan Administrator",
+            "Jabatan Tenaga Ahli",
+          ],
+          ans: 2,
+          key: "c",
+        },
+        {
+          q: "6. Pemberhentian ASN tidak atas permintaan sendiri dilakukan karena hal berikut, KECUALI...",
+          opt: [
+            "Mencapai batas usia pensiun",
+            "Perampingan organisasi",
+            "Tidak berkinerja",
+            "Mengundurkan diri",
+          ],
+          ans: 3,
+          key: "d",
+        },
+        {
+          q: "7. Periodisasi kenaikan pangkat PNS sejak 1 Oktober 2025 dapat dilakukan pada...",
+          opt: [
+            "1 April dan 1 Oktober",
+            "Setiap awal triwulan",
+            "Tanggal 1 setiap bulan",
+            "Setiap awal semester",
+          ],
+          ans: 2,
+          key: "c",
+        },
+        {
+          q: "8. Golongan ruang bagi PNS dengan pangkat Penata Muda (lulusan S1/D4) adalah...",
+          opt: ["II/c", "III/a", "III/b", "III/c"],
+          ans: 1,
+          key: "b",
+        },
+        {
+          q: "9. Pangkat untuk golongan ruang III/c adalah...",
+          opt: ["Penata Muda Tk I", "Penata", "Penata Tk I", "Pembina"],
+          ans: 1,
+          key: "b",
+        },
+        {
+          q: "10. Manajemen ASN diselenggarakan berdasarkan sistem...",
+          opt: ["Senioritas", "Sistem Merit", "Sistem Spoil", "Sistem Terbuka"],
+          ans: 1,
+          key: "b",
+        },
+        {
+          q: "11. (KASUS) Riko, seorang Pejabat Pengawas lahir pada 21 Mei 1988. Kapan ia akan pensiun?",
+          opt: ["21 Mei 2046", "1 Juni 2046", "1 Mei 2046", "21 Mei 2048"],
+          ans: 1,
+          key: "b",
+        },
+        {
+          q: "12. Berikut adalah hak ASN dalam bentuk Jaminan Sosial, KECUALI...",
+          opt: [
+            "Jaminan Hari Tua",
+            "Jaminan Kematian",
+            "Jaminan Perumahan Mewah",
+            "Jaminan Kecelakaan Kerja",
+          ],
+          ans: 2,
+          key: "c",
+        },
+        {
+          q: "13. Pemberhentian sementara bagi PNS dilakukan jika...",
+          opt: [
+            "Sakit selama 3 hari",
+            "Diangkat menjadi pejabat negara",
+            "Mengambil cuti tahunan",
+            "Mendapat hukuman disiplin ringan",
+          ],
+          ans: 1,
+          key: "b",
+        },
+        {
+          q: "14. Asas netralitas dalam penyelenggaraan kebijakan ASN berarti...",
+          opt: [
+            "Bebas dari pengaruh partai politik",
+            "Tidak bekerja sama dengan instansi lain",
+            "Hanya melayani golongan tertentu",
+            "Bebas dari aturan hukum",
+          ],
+          ans: 0,
+          key: "a",
+        },
+        {
+          q: "15. TMT Pensiun adalah tanggal 1 bulan berikutnya setelah pegawai mencapai...",
+          opt: [
+            "Masa kerja 20 tahun",
+            "Usia 50 tahun",
+            "Batas usia pensiun",
+            "Pangkat IV/e",
+          ],
+          ans: 2,
+          key: "c",
+        },
+        {
+          q: "16. Standar Kompetensi ASN terdiri atas kompetensi...",
+          opt: [
+            "Teknis, Manajerial, Sosial Kultural",
+            "Akademis, Teknis, Perilaku",
+            "Manajerial, Kepemimpinan, Strategis",
+            "Integritas, Profesional, Sinergi",
+          ],
+          ans: 0,
+          key: "a",
+        },
+        {
+          q: "17. Kompetensi yang diukur dari tingkat pendidikan, pelatihan fungsional, dan pengalaman kerja teknis adalah...",
+          opt: [
+            "Kompetensi Manajerial",
+            "Kompetensi Teknis",
+            "Kompetensi Sosial Kultural",
+            "Kompetensi Adaptif",
+          ],
+          ans: 1,
+          key: "b",
+        },
+        {
+          q: "18. Kemampuan dalam mempromosikan sikap toleransi dan keterbukaan termasuk dalam kompetensi...",
+          opt: ["Manajerial", "Teknis", "Sosial Kultural", "Integritas"],
+          ans: 2,
+          key: "c",
+        },
+        {
+          q: "19. Pelaksanaan pengembangan kompetensi secara nonklasikal meliputi hal berikut, KECUALI...",
+          opt: [
+            "Mentoring",
+            "E-learning",
+            "Seminar di kelas formal",
+            "Coaching",
+          ],
+          ans: 2,
+          key: "c",
+        },
+        {
+          q: "20. Analisis Kebutuhan Pembelajaran (AKP) dilakukan untuk...",
+          opt: [
+            "Menentukan besaran gaji",
+            "Mengidentifikasi gap kompetensi",
+            "Menilai kehadiran pegawai",
+            "Menentukan lokasi mutasi",
+          ],
+          ans: 1,
+          key: "b",
+        },
+        {
+          q: "21. Setiap pegawai ASN wajib melakukan pengembangan kompetensi minimal...",
+          opt: [
+            "10 JP/tahun",
+            "20 JP/tahun",
+            "40 JP/tahun",
+            "Tidak ada batas minimal",
+          ],
+          ans: 1,
+          key: "b",
+        },
+        {
+          q: "22. Dalam kamus kompetensi manajerial, aspek 'Mengelola Perubahan' berada pada level...",
+          opt: ["Soft skill", "Hard skill", "Managerial skill", "Core skill"],
+          ans: 2,
+          key: "c",
+        },
+        {
+          q: "23. Siapa yang bertanggung jawab melakukan evaluasi pasca-pembelajaran?",
+          opt: [
+            "Atasan Langsung",
+            "Unit Kepegawaian Pusat",
+            "Lembaga Administrasi Negara",
+            "Pusdiklat Pajak",
+          ],
+          ans: 0,
+          key: "a",
+        },
+        {
+          q: "24. (KASUS) Seorang pelaksana ingin meningkatkan kemampuan bahasa asing untuk tugas luar negeri. Ini termasuk pengembangan kompetensi...",
+          opt: ["Sosial Kultural", "Manajerial", "Teknis", "Integritas"],
+          ans: 2,
+          key: "c",
+        },
+        {
+          q: "25. Pengembangan kompetensi melalui sistem pembelajaran yang terintegrasi (Corporate University) bertujuan...",
+          opt: [
+            "Mengurangi biaya diklat",
+            "Menyambungkan pembelajaran dengan pekerjaan",
+            "Hanya formalitas administrasi",
+            "Mengganti peran atasan",
+          ],
+          ans: 1,
+          key: "b",
+        },
+        {
+          q: "26. PNS Tugas Belajar Dibiayai yang Diberhentikan dari jabatan berhak menerima tunjangan kinerja sebesar...",
+          opt: ["100%", "75%", "50%", "25%"],
+          ans: 1,
+          key: "b",
+        },
+        {
+          q: "27. Berapa lama masa studi normatif maksimal untuk jenjang S2 dalam skema TB Mandiri?",
+          opt: ["1,5 tahun", "2 tahun", "3 tahun", "4 tahun"],
+          ans: 2,
+          key: "c",
+        },
+        {
+          q: "28. Jangka waktu re-entry program bagi PNS yang telah selesai studi adalah...",
+          opt: [
+            "1 hari kerja",
+            "3 hari kerja",
+            "7 hari kerja",
+            "14 hari kerja",
+          ],
+          ans: 1,
+          key: "b",
+        },
+        {
+          q: "29. (KASUS) Budi menempuh S1 mandiri dan tidak diberhentikan dari jabatannya. Berapa tunjangan kinerja yang ia terima?",
+          opt: ["50%", "75%", "100%", "Tidak menerima"],
+          ans: 2,
+          key: "c",
+        },
+        {
+          q: "30. Ganti kerugian bagi PNS TB Dibiayai yang gagal studi (Drop Out) karena kesalahan sendiri adalah...",
+          opt: [
+            "Biaya pendidikan saja",
+            "Biaya pendidikan + denda 100%",
+            "Hanya denda saja",
+            "Kembali bekerja tanpa sanksi",
+          ],
+          ans: 1,
+          key: "b",
+        },
+        {
+          q: "31. Syarat IPK minimal untuk mengikuti seleksi Tugas Belajar Dibiayai jenjang S2/S3 adalah...",
+          opt: ["2.75", "3.00", "3.25", "3.50"],
+          ans: 1,
+          key: "b",
+        },
+        {
+          q: "32. Masa studi normatif untuk jenjang S3 pada TB Mandiri adalah maksimal...",
+          opt: ["4 tahun", "5 tahun", "6 tahun", "7 tahun"],
+          ans: 2,
+          key: "c",
+        },
+        {
+          q: "33. PNS dapat diberikan perpanjangan masa studi Tugas Belajar maksimal...",
+          opt: ["1 semester", "2 semester", "3 semester", "4 semester"],
+          ans: 1,
+          key: "b",
+        },
+        {
+          q: "34. Salah satu alasan pembatalan tugas belajar adalah...",
+          opt: [
+            "Mendapat nilai A",
+            "Menjadi anggota partai politik",
+            "Menikah",
+            "Pindah rumah",
+          ],
+          ans: 1,
+          key: "b",
+        },
+        {
+          q: "35. Tugas Belajar Mandiri Tidak Diberhentikan dapat dilaksanakan jika lokasi pendidikan...",
+          opt: [
+            "Di luar negeri",
+            "Berada dalam satu wilayah kerja dan tidak mengganggu tugas",
+            "Minimal 500 km dari kantor",
+            "Hanya dilakukan saat akhir pekan",
+          ],
+          ans: 1,
+          key: "b",
+        },
+        {
+          q: "36. (KASUS) PNS yang sedang TB Diberhentikan ingin naik pangkat. Syaratnya adalah...",
+          opt: [
+            "Sudah lulus dan diaktifkan kembali",
+            "Cukup dengan surat keterangan aktif kuliah",
+            "Minimal sudah kuliah 1 tahun",
+            "Tidak bisa naik pangkat saat TB",
+          ],
+          ans: 0,
+          key: "a",
+        },
+        {
+          q: "37. Masa ikatan dinas bagi PNS TB Dibiayai adalah...",
+          opt: [
+            "1 x masa studi",
+            "2 x masa studi",
+            "3 x masa studi",
+            "5 tahun flat",
+          ],
+          ans: 1,
+          key: "b",
+        },
+        {
+          q: "38. PNS TB Dibiayai yang mengundurkan diri saat masa ikatan dinas wajib...",
+          opt: [
+            "Membayar denda 100%",
+            "Mengembalikan seluruh biaya + denda 100%",
+            "Hanya minta maaf",
+            "Bekerja di instansi lain",
+          ],
+          ans: 1,
+          key: "b",
+        },
+        {
+          q: "39. Izin luar negeri bagi PNS TB Mandiri yang ingin riset di luar negeri dikeluarkan oleh...",
+          opt: [
+            "Kepala Kantor",
+            "Sekretaris Jenderal",
+            "Menteri PANRB",
+            "Presiden",
+          ],
+          ans: 1,
+          key: "b",
+        },
+        {
+          q: "40. Hak PNS selama Tugas Belajar meliputi hal berikut, KECUALI...",
+          opt: [
+            "Gaji",
+            "Tunjangan Kinerja (sesuai persentase)",
+            "Uang lembur kantor",
+            "Evaluasi Kinerja",
+          ],
+          ans: 2,
+          key: "c",
+        },
+        {
+          q: "41. Prinsip manajemen kinerja ASN adalah...",
+          opt: [
+            "Subjektivitas atasan",
+            "Hasil kerja dan Perilaku kerja",
+            "Senioritas",
+            "Jumlah laporan bulanan",
+          ],
+          ans: 1,
+          key: "b",
+        },
+        {
+          q: "42. Penilaian kinerja ASN menggunakan skala predikat, salah satunya adalah...",
+          opt: ["Istimewa", "Sangat Baik", "Cumlaude", "Lulus"],
+          ans: 1,
+          key: "b",
+        },
+        {
+          q: "43. Dialog kinerja antara pimpinan dan pegawai bertujuan untuk...",
+          opt: [
+            "Mencari kesalahan",
+            "Memberikan feedback dan ekspektasi pimpinan",
+            "Menentukan hukuman disiplin",
+            "Mengurangi beban kerja",
+          ],
+          ans: 1,
+          key: "b",
+        },
+        {
+          q: "44. (KASUS) Jika capaian IKU pegawai 100% tapi perilaku 'Berorientasi Pelayanan' dinilai buruk, predikat kinerjanya bisa menjadi...",
+          opt: [
+            "Sangat Baik",
+            "Baik",
+            "Cukup/Butuh Perbaikan",
+            "Sangat Kurang",
+          ],
+          ans: 2,
+          key: "c",
+        },
+        {
+          q: "45. Aplikasi pengelolaan kinerja di Kementerian Keuangan adalah...",
+          opt: ["SIKKA", "e-Performance / SEMANTIK", "DGT Digital", "MyASN"],
+          ans: 1,
+          key: "b",
+        },
+        {
+          q: "46. UMP (Usulan Mutasi Pegawai) merupakan salah satu bentuk...",
+          opt: [
+            "Perencanaan kinerja",
+            "Evaluasi kinerja",
+            "Tindak lanjut hasil kinerja",
+            "Hukuman kinerja",
+          ],
+          ans: 2,
+          key: "c",
+        },
+        {
+          q: "47. Penyusunan Sasaran Kinerja Pegawai (SKP) dilakukan pada...",
+          opt: ["Awal tahun", "Tengah tahun", "Akhir tahun", "Kapan saja"],
+          ans: 0,
+          key: "a",
+        },
+        {
+          q: "48. Komponen perilaku kerja dalam SKP mengacu pada...",
+          opt: [
+            "Integritas saja",
+            "Core Values BerAKHLAK",
+            "Kehadiran fisik",
+            "Kecepatan mengetik",
+          ],
+          ans: 1,
+          key: "b",
+        },
+        {
+          q: "49. Pejabat penilai kinerja adalah...",
+          opt: [
+            "Rekan sejawat",
+            "Atasan Langsung",
+            "Kepala Bagian Kepegawaian",
+            "Direktur KITSDA",
+          ],
+          ans: 1,
+          key: "b",
+        },
+        {
+          q: "50. Feedback (umpan balik) yang baik bersifat...",
+          opt: [
+            "Sekali setahun",
+            "Konstruktif dan berkelanjutan",
+            "Hanya melalui surat resmi",
+            "Rahasia dari pegawai",
+          ],
+          ans: 1,
+          key: "b",
+        },
+        {
+          q: "51. IKU (Indikator Kinerja Utama) harus memenuhi kriteria...",
+          opt: ["SMART (Specific, Measurable, etc.)", "SWOT", "FAST", "SAFE"],
+          ans: 0,
+          key: "a",
+        },
+        {
+          q: "52. Penilaian kinerja periodik biasanya dilakukan setiap...",
+          opt: ["Minggu", "Bulan/Triwulan", "Dua tahun", "Saat promosi"],
+          ans: 1,
+          key: "b",
+        },
+        {
+          q: "53. Budaya kinerja di DJP menekankan pada...",
+          opt: [
+            "Kerja lembur terus menerus",
+            "Penyempurnaan berkelanjutan",
+            "Kepatuhan tanpa kritik",
+            "Penghematan kertas",
+          ],
+          ans: 1,
+          key: "b",
+        },
+        {
+          q: "54. Jika pegawai tidak setuju dengan hasil penilaian kinerja, ia dapat...",
+          opt: [
+            "Berhenti bekerja",
+            "Mengajukan keberatan sesuai prosedur",
+            "Menghapus data di aplikasi",
+            "Lapor ke polisi",
+          ],
+          ans: 1,
+          key: "b",
+        },
+        {
+          q: "55. Hasil evaluasi kinerja digunakan untuk...",
+          opt: [
+            "Pengembangan karier dan penghargaan",
+            "Menentukan jatah makan",
+            "Mengganti seragam",
+            "Hanya arsip",
+          ],
+          ans: 0,
+          key: "a",
+        },
+        {
+          q: "56. Jabatan Pelaksana di Kemenkeu dibedakan menjadi...",
+          opt: [
+            "Umum, Khusus, Tugas Belajar, Tertentu",
+            "Teknis dan Administrasi",
+            "Eselon IV dan Eselon V",
+            "Junior dan Senior",
+          ],
+          ans: 0,
+          key: "a",
+        },
+        {
+          q: "57. Peringkat jabatan (grading) tertinggi untuk jabatan pelaksana umum (S1) adalah...",
+          opt: ["7", "8", "9", "10"],
+          ans: 2,
+          key: "c",
+        },
+        {
+          q: "58. (KASUS) Ani lulusan SMA (II/a) masuk pertama kali. Peringkat jabatannya (grading) adalah...",
+          opt: ["5", "6", "7", "8"],
+          ans: 0,
+          key: "a",
+        },
+        {
+          q: "59. Perubahan peringkat jabatan (grading) dapat dilakukan jika...",
+          opt: [
+            "Pegawai berulang tahun",
+            "Peningkatan pendidikan atau promosi jabatan",
+            "Masa kerja mencapai 10 tahun tanpa syarat",
+            "Mutasi ke kantor pusat",
+          ],
+          ans: 1,
+          key: "b",
+        },
+        {
+          q: "60. Jabatan Pelaksana Khusus diberikan kepada pegawai yang...",
+          opt: [
+            "Sedang dihukum",
+            "Memiliki sertifikasi/keahlian khusus yang ditetapkan",
+            "Baru lulus CPNS",
+            "Akan pensiun bulan depan",
+          ],
+          ans: 1,
+          key: "b",
+        },
+        {
+          q: "61. Siapa yang menetapkan peringkat jabatan pelaksana di DJP?",
+          opt: [
+            "Kepala Kantor Pajak",
+            "Dirjen Pajak / Pejabat yang ditunjuk",
+            "Menteri Keuangan langsung",
+            "Kepala BKN",
+          ],
+          ans: 1,
+          key: "b",
+        },
+        {
+          q: "62. Syarat minimal pangkat untuk menduduki grading 9 (Pelaksana Umum) adalah...",
+          opt: ["II/c", "III/a", "III/b", "III/c"],
+          ans: 1,
+          key: "b",
+        },
+        {
+          q: "63. Pegawai yang sedang TB Diberhentikan menduduki jabatan...",
+          opt: [
+            "Pelaksana Umum",
+            "Pelaksana Tugas Belajar",
+            "Pelaksana Khusus",
+            "Fungsional",
+          ],
+          ans: 1,
+          key: "b",
+        },
+        {
+          q: "64. Grading (peringkat) berhubungan langsung dengan besaran...",
+          opt: ["Gaji pokok", "Tunjangan Kinerja", "Uang makan", "Uang lembur"],
+          ans: 1,
+          key: "b",
+        },
+        {
+          q: "65. Penetapan peringkat pertama bagi CPNS dilakukan berdasarkan...",
+          opt: [
+            "Hasil ujian masuk",
+            "Ijazah saat pengangkatan",
+            "Usia",
+            "Urutan abjad",
+          ],
+          ans: 1,
+          key: "b",
+        },
+        {
+          q: "66. PNS berhak cuti tahunan selama 12 hari kerja jika telah bekerja...",
+          opt: ["6 bulan", "1 tahun terus menerus", "2 tahun", "3 bulan"],
+          ans: 1,
+          key: "b",
+        },
+        {
+          q: "67. Lama maksimal cuti besar adalah...",
+          opt: ["1 bulan", "2 bulan", "3 bulan", "6 bulan"],
+          ans: 2,
+          key: "c",
+        },
+        {
+          q: "68. Syarat mengambil cuti besar selain haji pertama adalah masa kerja minimal...",
+          opt: ["3 tahun", "5 tahun terus menerus", "10 tahun", "15 tahun"],
+          ans: 1,
+          key: "b",
+        },
+        {
+          q: "69. (KASUS) Cuti Besar Haji pertama kali mendapatkan potongan tunjangan kinerja sebesar...",
+          opt: ["0% selama haji", "2,5% selama haji", "5% flat", "10%"],
+          ans: 0,
+          key: "a",
+        },
+        {
+          q: "70. Potongan tunjangan kinerja untuk PNS yang tidak masuk bekerja (tanpa izin) adalah...",
+          opt: ["1% per hari", "2,5% per hari", "5% per hari", "10% per hari"],
+          ans: 2,
+          key: "c",
+        },
+        {
+          q: "71. (KASUS) Terlambat masuk kerja (TL) kategori 1 adalah...",
+          opt: ["08.01 - 08.30", "09.01 - 09.30", "07.31 - 08.00", "Bebas"],
+          ans: 0,
+          key: "a",
+        },
+        {
+          q: "72. Potongan untuk TL 3 (> 60 menit atau tidak absen masuk) adalah...",
+          opt: ["1%", "1,25%", "2,5%", "5%"],
+          ans: 2,
+          key: "c",
+        },
+        {
+          q: "73. Batas waktu input izin di SIKKA adalah ... hari kerja setelah kejadian.",
+          opt: ["1", "2", "3", "5"],
+          ans: 2,
+          key: "c",
+        },
+        {
+          q: "74. Cuti Alasan Penting (CAP) diberikan maksimal selama...",
+          opt: ["15 hari", "1 bulan", "2 bulan", "3 bulan"],
+          ans: 1,
+          key: "b",
+        },
+        {
+          q: "75. Izin bersalin (Cuti Melahirkan) anak pertama s.d ketiga diberikan selama...",
+          opt: ["1 bulan", "2 bulan", "3 bulan", "4 bulan"],
+          ans: 2,
+          key: "c",
+        },
+        {
+          q: "76. Cuti di Luar Tanggungan Negara (CLTN) dapat diberikan paling lama...",
+          opt: [
+            "1 tahun",
+            "3 tahun (bisa diperpanjang 1 thn)",
+            "5 tahun",
+            "Selamanya",
+          ],
+          ans: 1,
+          key: "b",
+        },
+        {
+          q: "77. Pegawai yang CLTN maka status kepegawaiannya...",
+          opt: [
+            "Tetap menerima gaji",
+            "Masa kerja tidak dihitung dan tidak menerima penghasilan",
+            "Bisa naik pangkat otomatis",
+            "Wajib masuk seminggu sekali",
+          ],
+          ans: 1,
+          key: "b",
+        },
+        {
+          q: "78. PNS pria berhak mendapatkan cuti pendampingan istri melahirkan (Cuti Ayah) selama...",
+          opt: ["1 hari", "Maksimal 1 bulan (CAP)", "Tidak ada", "5 hari"],
+          ans: 1,
+          key: "b",
+        },
+        {
+          q: "79. Cuti Sakit lebih dari ... hari harus menggunakan surat keterangan dokter.",
+          opt: ["1", "2", "5", "14"],
+          ans: 0,
+          key: "a",
+        },
+        {
+          q: "80. PSW (Pulang Sebelum Waktunya) kategori 4 adalah jika pulang lebih awal >= ... menit.",
+          opt: ["31", "61", "91", "121"],
+          ans: 2,
+          key: "c",
+        },
+        {
+          q: "81. Cuti Tahunan tambahan bagi daerah remote klasifikasi IV adalah...",
+          opt: ["3 hari", "6 hari", "9 hari", "12 hari"],
+          ans: 3,
+          key: "d",
+        },
+        {
+          q: "82. Izin ke luar negeri urusan pribadi harus mendapat persetujuan dari...",
+          opt: [
+            "Kepala Seksi",
+            "Atasan setingkat Eselon II",
+            "Sekretaris Jenderal",
+            "Cukup lapor satpam",
+          ],
+          ans: 2,
+          key: "c",
+        },
+        {
+          q: "83. Presensi flexy time di hari Senin biasanya memberikan toleransi selama...",
+          opt: ["30 menit", "60 menit", "90 menit", "120 menit"],
+          ans: 2,
+          key: "c",
+        },
+        {
+          q: "84. Berita Acara Lupa Absen harus dilampiri bukti...",
+          opt: [
+            "Foto selfie",
+            "Tangkapan layar CCTV",
+            "Surat pernyataan teman",
+            "Struk belanja",
+          ],
+          ans: 1,
+          key: "b",
+        },
+        {
+          q: "85. Pemberhentian sementara dilakukan jika PNS ditahan karena...",
+          opt: [
+            "Tilang lalin",
+            "Menjadi tersangka/terdakwa tindak pidana",
+            "Utang piutang",
+            "Sengketa tanah pribadi",
+          ],
+          ans: 1,
+          key: "b",
+        },
+        {
+          q: "86. Penghargaan Nagara Dana Rakca diberikan kepada pegawai yang...",
+          opt: [
+            "Masa kerja 30 thn",
+            "Prestasi luar biasa bagi institusi/negara",
+            "Lulus diklat",
+            "Pindah kantor",
+          ],
+          ans: 1,
+          key: "b",
+        },
+        {
+          q: "87. KPLB adalah singkatan dari...",
+          opt: [
+            "Kenaikan Pangkat Luar Biasa",
+            "Kursus Pelatihan Luar Biasa",
+            "Kompensasi Pegawai Lepas Berkala",
+            "Kredit Pegawai Luar Biasa",
+          ],
+          ans: 0,
+          key: "a",
+        },
+        {
+          q: "88. Bentuk penghargaan di Kemenkeu meliputi...",
+          opt: [
+            "Piagam dan Medali",
+            "Hanya uang tunai",
+            "Pembebasan pajak pribadi",
+            "Mobil dinas pribadi",
+          ],
+          ans: 0,
+          key: "a",
+        },
+        {
+          q: "89. Satyalancana Karya Satya 20 tahun diberikan medali berwarna...",
+          opt: ["Perunggu", "Perak", "Emas", "Berlian"],
+          ans: 1,
+          key: "b",
+        },
+        {
+          q: "90. Pengusulan KPLB bagi PNS Kemenkeu disampaikan oleh...",
+          opt: [
+            "Pegawai sendiri",
+            "Pimpinan Unit Eselon I kepada Menteri Keuangan",
+            "Kepala BKN",
+            "Gubernur",
+          ],
+          ans: 1,
+          key: "b",
+        },
+        {
+          q: "91. (KASUS) Seorang pemeriksa pajak yang konsisten jujur dan berani menolak suap besar dapat diusulkan...",
+          opt: [
+            "Nagara Dana Rakca / Adhikarya",
+            "Cuti 1 tahun",
+            "Kenaikan gaji 10x",
+            "Pensiun dini",
+          ],
+          ans: 0,
+          key: "a",
+        },
+        {
+          q: "92. Penghargaan Nagara Dana Ksatria diberikan kepada pegawai yang...",
+          opt: [
+            "Juara lomba",
+            "Gugur/Tewas dalam tugas",
+            "Sakit parah",
+            "Pindah instansi",
+          ],
+          ans: 1,
+          key: "b",
+        },
+        {
+          q: "93. Batas waktu pengusulan penghargaan setelah prestasi diraih adalah...",
+          opt: ["1 bulan", "6 bulan", "1 tahun", "Tidak terbatas"],
+          ans: 2,
+          key: "c",
+        },
+        {
+          q: "94. KPLB dapat diberikan jika pegawai menemukan...",
+          opt: [
+            "Uang di jalan",
+            "Inovasi yang diakui dan berdampak luas",
+            "Teman lama",
+            "Cara tidur cepat",
+          ],
+          ans: 1,
+          key: "b",
+        },
+        {
+          q: "95. Penghargaan tingkat nasional seperti Anugerah ASN diselenggarakan oleh...",
+          opt: ["Kemenkeu", "Kementerian PANRB", "KPK", "DPR"],
+          ans: 1,
+          key: "b",
+        },
+        {
+          q: "96. Kartu identitas elektronik bagi ASN disebut...",
+          opt: ["Karpeg", "Kartu ASN", "ID Card Kantor", "KTP-el"],
+          ans: 1,
+          key: "b",
+        },
+        {
+          q: "97. Laporan Perkawinan Pertama wajib disampaikan paling lambat ... setelah pernikahan.",
+          opt: ["1 bulan", "6 bulan", "1 tahun", "2 tahun"],
+          ans: 2,
+          key: "c",
+        },
+        {
+          q: "98. PNS pria yang akan bercerai wajib...",
+          opt: [
+            "Langsung ke pengadilan",
+            "Melapor dan meminta izin/surat keterangan dari atasan/PPK",
+            "Hanya lapor RT",
+            "Diam saja",
+          ],
+          ans: 1,
+          key: "b",
+        },
+        {
+          q: "99. Data keluarga dalam administrasi kepegawaian digunakan untuk...",
+          opt: [
+            "Tunjangan, asuransi, dan pensiun",
+            "Hanya hiasan",
+            "Menentukan lokasi mutasi",
+            "Mencari pengganti",
+          ],
+          ans: 0,
+          key: "a",
+        },
+        {
+          q: "100. Laporan perkawinan janda/duda melampirkan...",
+          opt: [
+            "Surat Kematian/Akta Cerai",
+            "Ijazah TK",
+            "KTP orang tua",
+            "Daftar hadir",
+          ],
+          ans: 0,
+          key: "a",
+        },
+      ];
+
+      const container = document.getElementById("quizContainer");
+
+      // Loop untuk membuat elemen soal
+      questionsData.forEach((data, index) => {
+        const qDiv = document.createElement("div");
+        qDiv.className = "question";
+        qDiv.id = "qBox" + index;
+
+        let optionsHtml = "";
+        data.opt.forEach((option, optIdx) => {
+          const char = String.fromCharCode(97 + optIdx); // a, b, c, d
+          optionsHtml += `
+                    <li>
+                        <label>
+                            <input type="radio" name="q${index}" value="${optIdx}">
+                            ${char}. ${option}
+                        </label>
+                    </li>`;
+        });
+
+        qDiv.innerHTML = `
+                <p class="question-text">${data.q}</p>
+                <ul class="options">${optionsHtml}</ul>
+                <button type="button" class="btn-check" onclick="checkSingleAnswer(${index})">Cek Jawaban</button>
+                <div class="explanation" id="exp${index}">Jawaban benar: ${data.key}</div>
+            `;
+        container.appendChild(qDiv);
+      });
+
+      // Fungsi untuk mengecek satu jawaban
+      function checkSingleAnswer(index) {
+        const radios = document.getElementsByName("q" + index);
+        const qBox = document.getElementById("qBox" + index);
+        const expDiv = document.getElementById("exp" + index);
+
+        let selected = -1;
+        for (let r of radios) {
+          if (r.checked) {
+            selected = parseInt(r.value);
+            break;
+          }
         }
+
+        if (selected === -1) {
+          alert("Silakan pilih jawaban terlebih dahulu!");
+          return;
+        }
+
+        // Reset class
+        qBox.classList.remove("correct-box", "wrong-box");
+        expDiv.style.display = "block";
+
+        if (selected === questionsData[index].ans) {
+          qBox.classList.add("correct-box");
+        } else {
+          qBox.classList.add("wrong-box");
+        }
+      }
     </script>
-</body>
+  </body>
 </html>
