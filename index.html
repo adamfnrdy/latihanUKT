@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
   <head>
     <meta charset="UTF-8" />
@@ -22,6 +22,12 @@
       h1 {
         color: #003366;
         text-align: center;
+        margin-bottom: 10px;
+      }
+      .sub-header {
+        text-align: center;
+        color: #666;
+        margin-bottom: 20px;
       }
       .question {
         margin-bottom: 25px;
@@ -29,59 +35,73 @@
         padding: 20px;
         border-radius: 8px;
         transition: 0.3s;
+        background-color: #fff;
       }
       .question-text {
         font-weight: bold;
-        margin-bottom: 10px;
+        margin-bottom: 15px;
+        color: #333;
       }
       .options {
         list-style: none;
         padding: 0;
       }
       .options li {
-        margin: 8px 0;
+        margin: 10px 0;
       }
       .btn-check {
-        padding: 5px 15px;
+        padding: 8px 20px;
         background: #003366;
         color: white;
         border: none;
         border-radius: 4px;
         cursor: pointer;
         margin-top: 10px;
+        font-weight: bold;
       }
       .btn-check:hover {
         background: #0055a4;
       }
       .correct-box {
         background-color: #e8f5e9;
-        border: 1px solid green !important;
+        border: 2px solid #4caf50 !important;
       }
       .wrong-box {
         background-color: #ffebee;
-        border: 1px solid red !important;
+        border: 2px solid #f44336 !important;
       }
       .explanation {
-        font-size: 0.9em;
+        font-size: 0.95em;
         color: #333;
         display: none;
-        margin-top: 10px;
-        padding: 10px;
+        margin-top: 15px;
+        padding: 12px;
         border-top: 1px dashed #ccc;
-        font-weight: bold;
+        background: rgba(255, 255, 255, 0.5);
       }
       label {
         cursor: pointer;
         display: block;
         width: 100%;
+        padding: 5px;
+        border-radius: 4px;
+      }
+      label:hover {
+        background-color: #f0f0f0;
+      }
+      hr {
+        border: 0;
+        border-top: 1px solid #eee;
+        margin: 20px 0;
       }
     </style>
   </head>
   <body>
     <div class="container">
-      <h1>Ujian Mandiri: Soal Kepegawaian</h1>
-      <p style="text-align: center">
-        Cek jawaban langsung setelah menjawab setiap soal.
+      <h1>Ujian Mandiri: 100 Soal Kepegawaian</h1>
+      <p class="sub-header">
+        Berdasarkan Modul Kepegawaian DJP 2025. Pilih jawaban dan klik "Cek
+        Jawaban" pada tiap soal.
       </p>
       <hr />
 
@@ -89,7 +109,6 @@
     </div>
 
     <script>
-      // Data pertanyaan diambil dari kode asli Anda
       const questionsData = [
         {
           q: "1. Berdasarkan UU No. 20 Tahun 2023, ASN terdiri dari...",
@@ -608,14 +627,14 @@
           key: "a",
         },
         {
-          q: "57. Peringkat jabatan (grading) tertinggi untuk jabatan pelaksana umum (S1) adalah...",
-          opt: ["7", "8", "9", "10"],
+          q: "57. Kenaikan pangkat reguler dapat diberikan kepada PNS apabila telah menduduki pangkat terakhir selama minimal...",
+          opt: ["2 tahun", "3 tahun", "4 tahun", "5 tahun"],
           ans: 2,
           key: "c",
         },
         {
-          q: "58. (KASUS) Ani lulusan SMA (II/a) masuk pertama kali. Peringkat jabatannya (grading) adalah...",
-          opt: ["5", "6", "7", "8"],
+          q: "58. Predikat Kinerja tahunan bagi pegawai untuk kenaikan pangkat pilihan karena prestasi kerja minimal harus bernilai...",
+          opt: ["Sangat Baik", "Baik", "Cukup", "Istimewa"],
           ans: 0,
           key: "a",
         },
@@ -975,7 +994,7 @@
 
       const container = document.getElementById("quizContainer");
 
-      // Loop untuk membuat elemen soal
+      // Render soal secara otomatis
       questionsData.forEach((data, index) => {
         const qDiv = document.createElement("div");
         qDiv.className = "question";
@@ -983,7 +1002,7 @@
 
         let optionsHtml = "";
         data.opt.forEach((option, optIdx) => {
-          const char = String.fromCharCode(97 + optIdx); // a, b, c, d
+          const char = String.fromCharCode(97 + optIdx);
           optionsHtml += `
                     <li>
                         <label>
@@ -997,12 +1016,12 @@
                 <p class="question-text">${data.q}</p>
                 <ul class="options">${optionsHtml}</ul>
                 <button type="button" class="btn-check" onclick="checkSingleAnswer(${index})">Cek Jawaban</button>
-                <div class="explanation" id="exp${index}">Jawaban benar: ${data.key}</div>
+                <div class="explanation" id="exp${index}">Jawaban benar: <strong>${data.key}</strong></div>
             `;
         container.appendChild(qDiv);
       });
 
-      // Fungsi untuk mengecek satu jawaban
+      // Fungsi pengecekan jawaban tunggal
       function checkSingleAnswer(index) {
         const radios = document.getElementsByName("q" + index);
         const qBox = document.getElementById("qBox" + index);
@@ -1017,11 +1036,11 @@
         }
 
         if (selected === -1) {
-          alert("Silakan pilih jawaban terlebih dahulu!");
+          alert("Silakan pilih salah satu jawaban untuk nomor ini!");
           return;
         }
 
-        // Reset class
+        // Hapus kelas lama jika ada
         qBox.classList.remove("correct-box", "wrong-box");
         expDiv.style.display = "block";
 
